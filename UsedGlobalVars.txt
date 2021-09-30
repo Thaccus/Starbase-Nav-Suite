@@ -1,5 +1,13 @@
 List of global vars. Grouping is based on function. Ctrl-F good.
 
+:FWD FcuForward Field 3 Letter Standard
+:BWD FcuBackward Field 3 Letter Standard
+:PCH FcuRotationalPitch Field 3 Letter Standard
+:YAW FcuRotationalYaw Field 3 Letter Standard
+:ROL FcuRotationalRoll Field 3 Letter Standard
+:SUD FcuUpDown Field 3 Letter Standard
+:SLR FcuRightLeft Field 3 Letter Standard
+:FGM FcuRightLeft Field 3 Letter Standard
 :Aprch Approach button
 :Crus Cruise button should also be the feile name for the reventer on the FWD lever
 :B Back Reciever Signal Strength Field
@@ -40,7 +48,7 @@ List of global vars. Grouping is based on function. Ctrl-F good.
 :AD Downward AAS rangefinder group readout
 :AL Leftward AAS rangefinder group readout
 :AR Rightward AAS rangefinder group readout
-:C Asteroid collission flag. Doesnt work :)
+:C Asteroid collission flag. Doesnt work yet :)
 :W1-30 Waypoint coords. Technically only use 1-10 but you can expand to 30np
 :WPN Waypoint number
 :WPU Waypoint Update?
@@ -54,7 +62,6 @@ List of global vars. Grouping is based on function. Ctrl-F good.
 :Wpd Waypoint decrement button
 :Wps Waypoint save button
 :Wph Waypoint home button
+:Wpl Waypoint load button
 :Dest Destination Display
 :DTW Waypoint Deltas Display
-
-
