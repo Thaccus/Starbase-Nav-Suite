@@ -1,0 +1,20 @@
+a="origin_" b=a+"north" c=a+"south" d=a+"east" :tm=b goto2-:kr
+a+="west" e=160000 f=8*e g=f*3/13 h=2*e i=h*13/19 j=f*3/19 k=h*13/3
+l=1000000 m=l-:B m*=m n=l-:F n*=n o=l-:D o*=o :tm=c
+p=q r=s t=u
+v=l-:B v*=v w=l-:F w*=w x=l-:D x*=x :tm=d
+:X=(m+v)/f+y/g-z/j :Y=v/h-m/i+(y+z)/k :Z=(y+z-m-v)/e
+y=l-:B y*=y q=l-:F q*=q s=l-:D s*=s :tm=a
+:T=(n+w)/f+p/g-aa/j :U=w/h-n/i+(p+aa)/k :V=(p+aa-n-w)/e
+z=l-:B z*=z aa=l-:F aa*=aa u=l-:D u*=u :tm=b
+:Q=(o+x)/f+r/g-t/j :R=x/h-o/i+(r+t)/k :S=(r+t-o-x)/e goto3-:kr
+
+
+
+
+//:ke,:kf,:kg->:R,:F,:D Rear Front down receivers
+//:fx,:fy,:fz->:T,:U,:V Front XYZ
+//:ex,:ey,:ez->:X,:Y,:Z Rear XYZ
+//:gx,:gy,:gz->:Q,:R,:S Down XYZ
+
+//Credit to Firestar99

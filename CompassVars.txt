@@ -1,0 +1,29 @@
+:B Back Reciever
+:X Back Reciever X
+:Y Back Reciever Y
+:Z Back Reciever Z
+:F Front Reciever
+:T Front Reciever X
+:U Front Reciever Y
+:V Front Reciever Z
+:D Down Reciever
+:Q Down Reciever X
+:R Down Reciever Y
+:S Down Reciever Z
+:JX FWD Vector X
+:JY FWD Vector Y
+:JZ FWD Vector Z
+:HX Right Vector X
+:HY Right Vector Y
+:HZ Right Vector Z
+:IX Up Vector X
+:IY Up Vector Y
+:IZ Up Vector Z
+:KX Compass Display Translation
+:KY
+:KZ
+:KR
+:KS
+:KA
+:Crus
+:AAS

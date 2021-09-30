@@ -1,0 +1,25 @@
+if :nav<1 then g=0 f=0 goto1 end
+r=30 l=0.1 pt=15 yt=20 rt=3 ep=1.05 ed=5000 et=1000
+if g>0 then :aas=1 else :aas=0 end chill=0
+xD=:wx-:X yD=:wy-:Y zD=:wz-:Z Dt=sqrt((xD)^2+(yD)^2+(zD)^2)
+if f<1 then x0=:x y0=:y z0=:z Do=Dt f=1 r=0 end
+da=sqrt((:X-x0)^2+(:Y-y0)^2+(:Z-z0)^2) d0=d1 d1=Dt v1=d0-d1
+dx=(Do-da)*ep+ed if Dt>dx or :c>0 then s=1 :c=0 end
+if s>0 then :fwd=0 if abs(v1)<15 then f=0 g=0 s=0 goto1 end end
+e=10^6 ds=e*sqrt((:T-:X)^2+(:U-:Y)^2+(:V-:Z)^2)
+Dd=ds/Dt xs=:X+Dd*xD/e ys=:Y+Dd*yD/e zs=:Z+Dd*zD/e
+vr=xs-:T vs=ys-:U vt=zs-:V vj=:Q-:X vk=:R-:Y vl=:S-:Z
+va=:T-:X vb=:U-:Y vc=:V-:Z vx=vk*vc-vb*vl vy=-(vj*vc-va*vl)
+vz=vj*vb+va*vk pj=vr*vj+vs*vk+vt*vl px=vr*vx+vs*vy+vz*vt
+n="\n" :dd=(Do-da)+n+Dt+"\npj:"+pj+" px:"+px+" r:"+r+" g:"+g
+if Dt<et then :nav=0 :fwd=0 :CRUS=100 end if g>0 then goto1 end
+if (:lx>-l)*(:lx<l)*(:ly>-l)*(:ly<l) theng=1 :fwd=100 :CRUS=0 goto1end
+if :ly<-l or :ly>l then :PCH=:ly*pt end  //globals created by
+if :lx<-l or :lx>l then :YAW=:lx*yt end //CompassDelta
+if :lz<-l or :lz>l then :ROL=(1-:lz)*rt end
+if chill<10 then chill+=1 goto20end //Original by Fixerid
+
+//Requires compassDelta's Lxyz(Local wp orientation vector) data to work
+//Im fairly certain lines 9-13 dont need to exist, but my testers were
+//saying that it would never reorient in a version without them.
+//needs more work.
