@@ -15,6 +15,6 @@ T=V1+V2 :Scn="Result"+b+L1+L2+b+b+T+s :Scanner=0 goto1
 
 
 
-//To change to sacks s=" stks" V1=:Vol/1728 V2=:Vol/1728
+//To change to stacks s=" stks" V1=:Vol/1728 V2=:Vol/1728
 
 //Who made the original? Please message thaccus so I can attribute
