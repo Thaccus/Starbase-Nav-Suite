@@ -1,15 +1,20 @@
-:B Back Reciever
+List of global vars. Grouping is based on function. Ctrl-F good.
+
+:Aprch Approach button
+:Crus Cruise button should also be the feile name for the reventer on the FWD lever
+:B Back Reciever Signal Strength Field
 :X Back Reciever X
 :Y Back Reciever Y
 :Z Back Reciever Z
-:F Front Reciever
+:F Front Reciever Signal Strength Field
 :T Front Reciever X
 :U Front Reciever Y
 :V Front Reciever Z
-:D Down Reciever
+:D Down Reciever Signal Strength Field
 :Q Down Reciever X
 :R Down Reciever Y
 :S Down Reciever Z
+:TM Target message field for FBD receivers
 :JX FWD Vector X
 :JY FWD Vector Y
 :JZ FWD Vector Z
@@ -22,23 +27,34 @@
 :Lx Wp Vector X
 :Ly Wp Vector Y
 :Lz Wp Vector Z
-:KX Compass Display Translation
-:KY
-:KZ
-:KR
-:KS
-:KA
-:Crus
-:AAS
+:K Compass Display
+:: Compass ISAN Display
+:KX Compass Panel Translation Vector X
+:KY Compass Panel Translation Vector Y
+:KZ Compass Panel Translation Vector Z
+:KR Compass magic IDFK
+:KS Compass magic IDFK
+:KA Compass magic IDFK
+:AAS Asteroid Avoidance Button and RF state control
+:AU Upward AAS rangefinder group readout
+:AD Downward AAS rangefinder group readout
+:AL Leftward AAS rangefinder group readout
+:AR Rightward AAS rangefinder group readout
+:C Asteroid collission flag. Doesnt work :)
 :W1-30 Waypoint coords. Technically only use 1-10 but you can expand to 30np
-:WPN
-:WPU
-:WPC
-:WPCN
-:WX
-:WY
-:WZ
-:WP
-:Dest
-:DTW
-:
+:WPN Waypoint number
+:WPU Waypoint Update?
+:WPC Waypoint current
+:WPCN Waypoint current number?
+:WX Waypoint X Coord
+:WY Waypoint Y Coord
+:WZ Waypoint Z Coord
+:WP Waypoint Display
+:Wpi Waypoint increment button
+:Wpd Waypoint decrement button
+:Wps Waypoint save button
+:Wph Waypoint home button
+:Dest Destination Display
+:DTW Waypoint Deltas Display
+
+
