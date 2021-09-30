@@ -19,6 +19,9 @@
 :IX Up Vector X
 :IY Up Vector Y
 :IZ Up Vector Z
+:Lx Wp Vector X
+:Ly Wp Vector Y
+:Lz Wp Vector Z
 :KX Compass Display Translation
 :KY
 :KZ
