@@ -13,4 +13,4 @@ https://gitlab.com/Whitestrake/yolol
 
 How to install: Download the .fbe, put chips in slots, attach buttons, place receivers in downward L pattern as referenced in FixerID's wiki. Ensure your FCU, binds, and levers use the 3 letter standard in the example FCU. Set FWD lever re-center field to CRUS. Make sure things are named appropriately as per the .fbe. A list of all global variables used is avaiable, but may not be complete. Tune the autopilot as per navCas wiki. Copy the rangefiders as many times as you have to to cover your ship. Use the top one for the top parts etc.
 
-How to use: Stop the ship. Enter a waypoint either by saving and/or selecting it then Loading it via Archageos Waypointing system (You can also enter it by putting three numers into the isan panel value). Press nav to go there or point at it manually with compass and go yourself.
+How to use: Stop the ship. Enter a waypoint either by saving and/or selecting it then Loading it via Archageos Waypointing system (You can also enter it by putting three numers into the isan panel :: value thanks to Firestar99). Press nav to go there or point at it manually with compass and go yourself.
