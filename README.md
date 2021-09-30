@@ -9,6 +9,8 @@ https://github.com/Archaegeo/Starbase/tree/main/ISAN-Waypoint%20System
 
 https://github.com/fixerid/sb-projects/tree/main/NavCas
 
+https://gitlab.com/Whitestrake/yolol
+
 How to install: Download the .fbe, put chips in slots, attach buttons, place receivers in downward L pattern as referenced in FixerID's wiki. Ensure your FCU, binds, and levers use the 3 letter standard in the example FCU. Set FWD lever re-center field to CRUS. Make sure things are named appropriately as per the .fbe. A list of all global variables used is avaiable, but may not be complete. Tune the autopilot as per navCas wiki.
 
 How to use: Stop the ship. Enter a waypoint either by saving and/or selecting it then Loading it via Archageos Waypointing system. Press nav to go there or point at it manually with compass and go yourself.
