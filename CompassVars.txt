@@ -30,3 +30,15 @@
 :KA
 :Crus
 :AAS
+:W1-30 Waypoint coords. Technically only use 1-10 but you can expand to 30np
+:WPN
+:WPU
+:WPC
+:WPCN
+:WX
+:WY
+:WZ
+:WP
+:Dest
+:DTW
+:
