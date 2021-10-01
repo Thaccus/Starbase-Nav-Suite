@@ -16,5 +16,7 @@ How to install: Download the .fbe, put chips in slots, attach buttons, place rec
 How to use: Stop the ship. Enter a waypoint either by saving and/or selecting it then Loading it via Archageos Waypointing system. Press nav to go there or point at it manually with compass and go yourself.
 
 FAQ: 
+
  My auto pilot is dumb and won't align! How do I tune it to be smarter?
+ 
  There are four tunables: on line two there are PT(pitch target), YT(yaw target), RT(roll target), and on line 20 there is a check against chill. Ideally you want PT and YT to be a value that will turn you ~30 degrees on an instant input. They will be multiplied by how close you are to proper alignment and if they arent large enough you may never reach proper alignment. If you have recenter at 100 and pt/yt arent enough, you may have to settle for lowering the recenter value 50/25/20/10/5 will extend the burn but you will need to wait for them to end(see chill). Roll just does minor error correction so 10 degrees is more than enough. In any case chill is by far one of the most important factors. It is important that the ship come to a full rotational stop before asking it where it is going again. ISAN is most accurate when still and you are likely trying to point at something far away. If your ship is large, increase chill untill there is at least .4 seconds of stopped rotation between each alignment burn. I know the watiting hurts, but trust me that it is faster and more accurate to have a bit of wait.
