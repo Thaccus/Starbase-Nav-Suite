@@ -41,7 +41,7 @@ List of global vars. Grouping is based on function. Ctrl-F good.
 :KY Compass Panel Translation Vector Y
 :KZ Compass Panel Translation Vector Z
 :KR Compass magic IDFK
-:KS Compass magic IDFK
+:KS Compass Speed. Works as a regular speed output.
 :KA Compass magic IDFK
 :AAS Asteroid Avoidance Button and RF state control
 :AU Upward AAS rangefinder group readout
