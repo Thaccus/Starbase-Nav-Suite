@@ -1,6 +1,12 @@
-l=1000 p=100 n=-p //p is avoidance agression 0-100
-if:AASthenif:AL<lthen:SLR=nelseif:AR<lthen:SLR=pendendend
-if:AASthenif:AU<lthen:SUD=nelseif:AD<lthen:SUD=pendendendgoto2
+r=1000 q=r*2 p=100 n=-p
+if:AASthena=p*(:AL<r) :SLR=a+n*(:AR<r)*(a<1) :c=(:AL+:AR)<qend
+if:AASthenb=p*(:AD<r) :SUD=b+n*(:AU<r)*(b<1) :c=(:AL+:AR)<qendgoto2
+
+
+//old
+//r=1000 p=100 n=-p //p is avoidance aggression 0-100
+//if:AASthenif:AL<rthen:SLR=nelseif:AR<rthen:SLR=pendendend
+//if:AASthenif:AU<rthen:SUD=nelseif:AD<rthen:SUD=pendendendgoto2
 
 
 
