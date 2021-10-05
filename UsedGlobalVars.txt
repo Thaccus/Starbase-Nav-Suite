@@ -48,7 +48,7 @@ List of global vars. Grouping is based on function. Ctrl-F good.
 :AD Downward AAS rangefinder group readout
 :AL Leftward AAS rangefinder group readout
 :AR Rightward AAS rangefinder group readout
-:C Asteroid collission flag. Doesnt work yet :)
+:C Asteroid collission flag.
 :W1-30 Waypoint coords. Technically only use 1-10 but you can expand to 30np
 :WPN Waypoint number
 :WPU Waypoint Update?
