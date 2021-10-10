@@ -23,4 +23,4 @@ FAQ:
 
  I cant get X to work in combination with your system what am I doing wrong?
  
- Integration hell is real and you have just stepped into it. Welcome :) I have provided a list of all global variables and what they are used for in UsedGlobalVars.txt Ensure you are not overlapping unintnetionally, then trace each variable you intentionally overlap though the chips to understand them.
+ Integration hell is real and you have just stepped into it. Welcome :) I have provided a list of all global variables and what they are used for in UsedGlobalVars.txt Ensure you are not overlapping unintentionally, then trace each variable you intentionally overlap though the chips to understand them.
