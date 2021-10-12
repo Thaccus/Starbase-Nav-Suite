@@ -31,4 +31,4 @@ FAQ:
 
 My question isnt in the faq. What do?
 
- Contact me here, on reddit /u/Thaccus, or on discord Thaccus#0591(Make sure you are in one of the Strabase/SSS/Cylon discords or friend me to message me.)
+ Contact me here, on reddit /u/Thaccus, or on discord Thaccus#0591(Make sure you are in one of the Starbase/SSS/Cylon discords or friend me to message me.)
