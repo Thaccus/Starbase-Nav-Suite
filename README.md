@@ -28,3 +28,7 @@ FAQ:
  I can't get X to work in combination with your system. What am I doing wrong?
  
  Integration hell is real and you have just stepped into it. Welcome :) I have provided a list of all global variables and what they are used for in UsedGlobalVars.txt Ensure you are not overlapping unintentionally, then trace each variable you intentionally overlap though the chips to understand them.
+
+My question isnt in the faq. What do?
+
+ Contact me here, on reddit /u/Thaccus or on discord Thaccus#0591(Make sure you are in one of the Strabase/SSS/Cylon discords or friend me to message me.)
