@@ -23,7 +23,7 @@ FAQ:
  
  I don't want to redo my binds! Can you make a version that uses standard binds?
  
- No, join my fucking religion. The small bind names help with shoving more behavior into fewer lines of code. That makes it easier on me, faster for you, and ensures that my company can all pass ships around and code for them without running into weirdness. Also I like using c-Key for turret shenanigans/strafing and I don't want other things playing with FcuRotationalPitch/Yaw. I have had some people tell me they have this set up as FcuMfcIO2 so...maybe give that a go if you want. Just make sure you still set up levers for those binds as they need to automatically re-center.
+ No, join my fucking religion. For real though: The small bind names help with shoving more behavior into fewer lines of code. That makes it easier on me, faster for you, and ensures that my company can all pass ships around and code for them without running into weirdness. Also I like using c-Key for turret shenanigans/strafing and I don't want other things playing with FcuRotationalPitch/Yaw. I have had some people tell me they have this set up as FcuMfcIO2 so...maybe give that a go if you want. Just make sure you still set up levers for those binds as they need to automatically re-center.
 
  I can't get X to work in combination with your system. What am I doing wrong?
  
