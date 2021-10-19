@@ -1,0 +1,20 @@
+l=.1 pt=50 yt=50 rt=20 wait=30 goto1+:align
+if a<wait then a++ goto2 end a=0 x=:jx y=:jy z=:hy jz=:jz<0
+if y<-l or y>l or jz then :PCH=:jy*pt+pt*0.5*jz end
+if x<-l or x>l then :YAW=-:jx*yt+(-yt*0.5*jz) end
+if z<-l or z>l then :ROL=:hy*rt end goto1
+
+
+
+
+
+
+
+
+
+
+
+
+//Reorients ship to align with ISAN grid pointing Z+
+//May not work in editor
+//:Align :jx :jy :hy :jz :PCH :ROL :YAW
