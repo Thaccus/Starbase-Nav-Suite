@@ -13,7 +13,7 @@ z=r*m-p*o a=p*n-q*m b=y*u+z*v+a*w c=m*u+n*v+o*w d=p*u+q*v+r*w
 
 
 //Split of CompassDelta for faster orientation vars.
-//Needs faster ISAN
+//Faster ISAN would help a lot here
 //Global Vars for Receivers and their coords: B(XYZ) F(TUV) D(QRS)
 //ab=y*u+z*v+aa*w ac=m*u+n*v+o*w ad=p*u+q*v+r*w
 //:jx=p :jy=q :jz=r :hx=y :hy=z :hz=a :ix=m :iy=n :iz=o 
