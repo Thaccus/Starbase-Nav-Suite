@@ -30,6 +30,10 @@ FAQ:
  I can't get X to work in combination with your system. What am I doing wrong?
  
  Integration hell is real and you have just stepped into it. Welcome :) I have provided a list of all global variables and what they are used for in UsedGlobalVars.txt Ensure you are not overlapping unintentionally, then trace each variable you intentionally overlap though the chips to understand them.
+ 
+  Where quad?
+ 
+  This sytem was meant to be apporachable for people just getting into the game with little to no coding chops. A quad version with chip execution queing and fast vectors is coming SOONtm. Beware: It will not be as simple to set up and will eat YOLOLchips like candy.
 
 My question isnt in the faq. What do?
 
