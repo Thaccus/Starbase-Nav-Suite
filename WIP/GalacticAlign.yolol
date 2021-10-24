@@ -1,11 +1,12 @@
-l=.03 pt=50 yt=50 rt=20 wait=30 n="\n" s=" " goto1+:align
+l=.03 pt=50 yt=50 rt=20 wait=25 n="\n" s=" " goto1+:align
 ift<wait thent++ goto2end t=0 j=:jz<0 i=:iy<0 x=:jx y=:jy z=:hy
 if y<-l or y>l or j then :PCH=-:jy*pt-pt*1.2*j end
 if x<-l or x>l then :YAW=:jx*yt+(yt*1.2*j) end
 if z<-l or z>l or i then :ROL=:hy*rt+(rt*1.2*i) end
 a=y>-l and y<l b=x>-l and x<l c=z>-l and z<l
-if a*b*c>0 then:align=0 end :DD=l+s+j+n+a+b+c+n+x+n+y+n+z goto:align
-:DD=n+":Align button"+n+"Missing" goto7
+:DD=l+s+j+n+a+b+c+n+x+n+y+n+z
+if a*b*c>0 then:align=0 end goto:align
+:DD=n+":Align button"+n+"Missing" goto8
 //^:Align button missing loop
 
 
