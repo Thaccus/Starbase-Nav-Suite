@@ -33,8 +33,8 @@ FAQ:
  
   Where quad?
  
-  This sytem was meant to be apporachable for people just getting into the game with little to no shipwrighting or coding chops. A quad version with chip execution queing and fast vectors is coming SOONtm. Beware: It will not be as simple to set up and will eat YOLOLchips like candy.
+  This sytem was meant to be approachable for people just getting into the game with little to no shipwrighting or coding chops. A quad version with chip execution queing and fast vectors is coming SOONtm. Beware: It will not be as simple to set up and will eat YOLOLchips like candy.
 
-My question isnt in the faq. What do?
+My question isn't in the faq. What do?
 
  Contact me here, on reddit /u/Thaccus, or on discord Thaccus#0591(Make sure you are in one of the Starbase/SSS/Cylon discords or friend me to message me.)
