@@ -1,0 +1,1 @@
+These chips replace compassISAN3in and compassOutputXYZ with Fryke's IPS system and the "sacred grid" origin alignment. Reciver TM fields must be renamed FT BT and DT to use. May make a 2chip compasslike solution in the future.
