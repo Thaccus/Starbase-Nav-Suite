@@ -1,0 +1,19 @@
+om=" IPS  :o\n" mx="\nX: " my="\nY: " mz="\nZ: " // IPS v1.3 by Fryke
+bm=om+"  Booting  " mm=om+" Mono Mode "
+ca=91923 cb=74246 cc=4078 cd=95460 ce=65966 cf=142220 cg=5200332997
+ch=272015 d=368640 e=888881 f=-652758 j=111030 k=749384 l=550023
+n=707044 o=444478 g=ca*ca h=2*ca cn=2*(ca-cb) ci=cb*cb-ca*ca+cd*cd
+ck=2*(cb-cc) cl=2*(cd-ce) cj=2*cd t=1000 m=t*t
+op="origin_" nt=op+"north" st=op+"south" et=op+"east" wt=op+"west"
+mn=1 fm=mm+mx :FT=nt
+a=5000 b=-60000 c=0 i=10+mn*3 gotoi*(:F>0)
+w=(r-s*s+u*ck+v*cl-cg)/cf :V=(ch*u-d*v+e*w)/m-a :T=(f*u-k*v-j*w)/m-b
+:U=(n*u-l*v-o*w)/m-c gotoi
+goto1
+p=m-:F u=(p*p-q+g)/h v=(q-r+u*cn+ci)/cj :FT=nt i=14 goto10
+q=m-:F q*=q u=(p*p-q+g)/h v=(q-r+u*cn+ci)/cj :FT=et i=15 goto10
+r=m-:F r*=r v=(q-r+u*cn+ci)/cj :FT=st i=16 goto10
+s=m-:F :FT=wt i=13 goto10
+
+
+
