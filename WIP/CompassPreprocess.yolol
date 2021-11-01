@@ -7,7 +7,7 @@ f=:ly*3/i f=6-f-(3-f)*(f<3)-(-3-f)*(f>-3) g=:lx*5/i
 
 
 
-i=:ka :ks=((j-c)^2+(k-d)^2+(l-e)^2)^.5/1.6 c=j d=k e=l goto3-:kr
+i=:ka :ks=((j-c)^2+(k-d)^2+(l-e)^2)^h/1.6 c=j d=k e=l goto3-:kr
 :kz=1 c="\n    Read\n  upgrade\ninstruction\n    !!!"
 :k=c+"\n\nmissing :ka" goto12-:kr
 
