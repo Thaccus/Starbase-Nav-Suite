@@ -1,0 +1,20 @@
+h=.5 goto2-:kr
+j=:X k=:Y l=:Z p=:T-j q=:U-k r=:V-l m=:Q-j n=:R-k o=:S-l :lx=b :ly=c
+s=(m*m+n*n+o*o)^h m/=-s n/=-s o/=-s t=(p*p+q*q+r*r)^h p/=t q/=t r/=t
+u=:wx-j v=:wy-k w=:wz-l x=(u*u+v*v+w*w)^h u/=x v/=x w/=x y=q*o-r*n
+z=r*m-p*o a=p*n-q*m b=y*u+z*v+a*w c=m*u+n*v+o*w d=p*u+q*v+r*w
+:jx=p :jy=q :jz=r :hx=y :hy=z :hz=a :ix=m :iy=n :iz=o :lz=d goto2-:kr
+
+
+
+
+
+
+
+
+//Split of CompassDelta for faster orientation vars.
+//Needs faster ISAN
+
+//Global Vars for Receivers and their coords: B(XYZ) F(TUV) D(QRS)
+//:jx=p :jy=q :jz=r :hx=y :hy=z :hz=a :ix=m :iy=n :iz=o 
+//:lx=b :ly=c :lz=d
