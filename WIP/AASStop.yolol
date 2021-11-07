@@ -1,0 +1,19 @@
+r=1000 p=100
+if:AAS*(:AL<r+:AR<r+:AU<r+:AD<r)>1thenb=:FWD :FWD=0 goto3endgoto2
+if(:AL<r+:AR<r+:AU<r+:AD<r)>1 then:BWD=p goto3end:BWD=0 :FWD=b goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
