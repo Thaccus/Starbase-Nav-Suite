@@ -33,7 +33,7 @@ FAQ:
  
   Where quad?
  
-  This sytem was meant to be approachable for people just getting into the game with little to no shipwrighting or coding chops. A quad version with chip execution queing and fast vectors is coming SOONtm. Beware: It will not be as simple to set up and will eat YOLOLchips like candy.
+  This sytem was meant to be approachable for people just getting into the game with little to no shipwrighting or coding chops. A quad version with fast vectors is coming SOONtm. Beware: It will not be as simple to set up and will eat YOLOLchips like candy.
 
 My question isn't in the faq. What do?
 
