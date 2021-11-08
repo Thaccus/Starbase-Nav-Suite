@@ -3,7 +3,7 @@ ift<wait thent++ goto2end t=0 j=:jz<0 i=:iy<0 x=:jx y=:jy z=:hy
 if y<-l or y>l or j then :PCH=-:jy*pt-pt*1.2*j end
 if x<-l or x>l then :YAW=:jx*yt+(yt*1.2*j) end
 if z<-l or z>l or i then :ROL=:hy*rt+(rt*1.2*i) end
-a=y>-l and y<l and j b=x>-l and x<l c=z>-l and z<l and i
+a=(y>-l and y<l)*(1-j) b=x>-l and x<l c=(z>-l and z<l)*(1-i) 
 :DD=l+s+j+n+a+b+c+n+x+n+y+n+z
 if a*b*c>0 then:align=0 end goto:align
 :DD=n+":Align button"+n+"Missing" goto8
