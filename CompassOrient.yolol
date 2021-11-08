@@ -10,10 +10,10 @@ z=r*m-p*o a=p*n-q*m b=y*u+z*v+a*w c=m*u+n*v+o*w d=p*u+q*v+r*w
 
 
 
-
-
 //Split of CompassDelta for faster orientation vars.
-//Needs faster ISAN
+//Needs faster ISAN (IE:Quad or IPSA)
+//For upward L receiver pattern replace line3 with:
+//s=(m*m+n*n+o*o)^h m/=s n/=s o/=s t=(p*p+q*q+r*r)^h p/=t q/=t r/=t
 
 //Global Vars for Receivers and their coords: B(XYZ) F(TUV) D(QRS)
 //:jx=p :jy=q :jz=r :hx=y :hy=z :hz=a :ix=m :iy=n :iz=o 
