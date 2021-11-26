@@ -1,14 +1,14 @@
 r=1000 p=100
 if:AAS*(:AL<r+:AR<r+:AU<r+:AD<r)>1thenb=:FWD :FWD=0 goto3endgoto2
-if(:AL<r+:AR<r+:AU<r+:AD<r)>1 then:BWD=p goto3end:BWD=0 :FWD=b goto2
+if(:AL<r+:AR<r+:AU<r+:AD<r)>1then:BWD=p goto3end:BWD=0 :FWD=b goto2
 //sets fwd to 0 and bwd to max if more than one sector is colliding
 //resets fwd to original value when the obstruction ends.
 
-
-
-
-
-
+//More agressive version that starts slowing down if any sector collides.
+//Copy to lines 1-3 to use
+r=4000 p=100
+if:AAS*((:AL+:AR+:AU+:AD)<r)>1thenb=:FWD :FWD=0 goto3endgoto2
+if((:AL+:AR+:AU+:AD)<r)>1then:BWD=p goto3end:BWD=0 :FWD=b goto2
 
 
 
