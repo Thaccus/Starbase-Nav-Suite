@@ -8,7 +8,7 @@ List of global vars. Grouping is based on function. Ctrl-F good.
 :SUD FcuUpDown Field 3 Letter Standard
 :SLR FcuRightLeft Field 3 Letter Standard
 :Aprch Approach button
-:Crus Cruise button should also be the feile name for the reventer on the FWD lever
+:Crus Cruise button should also be the field name for the recenter on the FWD lever
 :B Back Reciever Signal Strength Field
 :X Back Reciever X
 :Y Back Reciever Y
