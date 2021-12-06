@@ -1,6 +1,6 @@
 r=1000 p=100
-if:AAS*(:AL<r+:AR<r+:AU<r+:AD<r)>1thenb=:FWD :FWD=0 goto3endgoto2
-if:AAS*(:AL<r+:AR<r+:AU<r+:AD<r)>1then:BWD=pgoto3end:BWD=0 :FWD=bgoto2
+if:AAS*(:AL<r+:AR<r+:AU<r+:AD<r) thenb=:FWD :FWD=0 goto3endgoto2
+if:AAS*(:AL<r+:AR<r+:AU<r+:AD<r) then:BWD=pgoto3end:BWD=0 :FWD=bgoto2
 //sets fwd to 0 and bwd to max if more than one sector is colliding
 //resets fwd to original value when the obstruction ends.
 
