@@ -1,0 +1,20 @@
+k=1000 e=19 i=:WIM j=:WEX n=:WPN goto1+(i+j)>0
+m=:WNM x=:xxx y=:yyy z=:zzz o=n/2-(n/2000*k)
+t=""+m+" \nX:"+x/k*k+" \nY:"+y/k*k+" \nZ:"+z/k*k goto3.5+n/2
+ifo thenifj then:w1=t endelseifj then:w2=t endendgotoe
+ifo thenifj then:w3=t endelseifj then:w4=t endendgotoe
+ifo thenifj then:w5=t endelseifj then:w6=t endendgotoe
+ifo thenifj then:w7=t endelseifj then:w8=t endendgotoe
+ifo thenifj then:w9=t endelseifj then:w10=t endendgotoe
+ifo thenifj then:w11=t endelseifj then:w12=t endendgotoe
+ifo thenifj then:w13=t endelseifj then:w14=t endendgotoe
+ifo thenifj then:w15=t endelseifj then:w16=t endendgotoe
+ifo thenifj then:w17=t endelseifj then:w18=t endendgotoe
+ifo thenifj then:w19=t endelseifj then:w20=t endendgotoe
+ifo thenifj then:w21=t endelseifj then:w22=t endendgotoe
+ifo thenifj then:w23=t endelseifj then:w24=t endendgotoe
+ifo thenifj then:w25=t endelseifj then:w26=t endendgotoe
+ifo thenifj then:w27=t endelseifj then:w28=t endendgotoe
+ifo thenifj then:w29=t endelseifj then:w30=t endendgotoe
+a=:WPC-:wz-:wy-:wx-" \nZ:"-" \nY:"-" \nX:"
+ifi then:WNM=a :XXX=:WX :YYY=:WY :ZZZ=:WZ end
