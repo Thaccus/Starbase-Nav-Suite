@@ -1,12 +1,11 @@
 :RESET=1 b="\n" o=" Ore" c=" Crystal" k=100 s=" kV"
 s1="Scan." s2="Scan.." a="Analyzing" r="Result" :SCN=r+b+scn
 goto3+:Scanner
-:SCAN=1 
-:SCN=s1+b+scn goto6*:scanner
-:IDX=0 if:VOL==0 or :VOL==V1 then:Scn=s2+b+scn goto5end :Scn=a
+:SCAN=1 :SCN=s1+b+scn goto5*:Scanner
+:IDX=0 if:VOL==0 or :VOL==V1 then:Scn=s2+b+scn goto4end :Scn=a
 V1=:VOL V=(V1+0.05)/k*k L1=:Mat-o-c+b+V+s
 :IDX=1 V2=:VOL V=(V2+0.05)/k*k L2=b+:Mat-o-c+b+V+s
-T=V1+V2 scn=L1+L2+b+b+T+s  :Scanner=0 goto1
+t=V1+V2 scn=L1+L2+b+b+t+s  :Scanner=0 goto1
 
 
 
