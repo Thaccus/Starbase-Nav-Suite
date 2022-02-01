@@ -1,0 +1,20 @@
+b="\n" o=" Ore" c=" Crystal" k=100 s=" kV" :reset=1
+if:Scanner then:Scn=b+"Scanning..." :Scan=1 goto3end goto1
+if:Scanner thenif:Scan thengoto4endelse:Scn="Offline" goto1end
+:idx=0 if:Vol==0then:Scn=b+"Scanning.." goto2end :Scn="Analyzing"
+V1=:Vol V=(V1+0.05)/k*k L1=:Mat-o-c+b+V+s
+:idx=1 V2=:Vol V=(V2+0.05)/k*k L2=b+:Mat-o-c+b+V+s
+T=V1+V2 :Scn="Result"+b+L1+L2+b+b+T+s :Scanner=0 goto1
+
+
+
+
+
+
+
+
+
+
+//To change to sacks s=" stks" V1=:Vol/1728 V2=:Vol/1728
+
+//Who made the original? Please message thaccus so I can attribute
