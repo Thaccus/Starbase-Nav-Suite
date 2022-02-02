@@ -11,7 +11,7 @@ https://github.com/fixerid/sb-projects/tree/main/NavCas
 
 https://gitlab.com/Whitestrake/yolol
 
-![Package Image](Package.png)
+![Package Image](Media/Package.jpg)
 
 How to install: Download the .fbe and turn it into a module. Paste the module in your ship blueprint. Put chips in slots, attach buttons, place receivers in downward L pattern as referenced in FixerID's wiki. Ensure your FCU, binds, and levers use the 3 letter standard in the example FCU. Set FWD lever re-center field to CRUS. Make sure things are named appropriately as per the .fbe. A list of all global variables used is avaiable, but may not be complete. Tune the autopilot as per navCas wiki. A more in-depth guide on tuning my changes is in the faq. Copy the rangefiders as many times as you need to cover your ship. Use the top one for the top parts etc.
 
