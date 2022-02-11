@@ -1,4 +1,4 @@
-l=.04 pt=100 yt=140 rt=160 w=34 d=5 n="\n" s=" " goto1+:align
+l=.04 pt=10 yt=14 rt=16 w=34 d=5 n="\n" s=" " goto1+:align
 ift<w thent++ goto2end t=0 j=:jz<0 i=:iy<0 x=:jx y=:jy z=:hy
 a=y<-l or y>l b=x<-l or x>l c=z<-l or z>l
 :DD=l+s+j+i+n+a+b+c+n+y+n+x+n+z+n gotod
