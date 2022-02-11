@@ -6,7 +6,7 @@ if y<-l or y>l or j then :PCH=-:jy*pt-pt*j*(j-y/y*y) end
 if x<-l or x>l then :YAW=:jx*yt+yt*j*(j-x/x*x) d=7 goto2end
 if z<-l or z>l or i then :ROL=:hy*rt+rt*i*(i-z/z*z) d=5 goto2end
 if a+b+c<1 then:align=0 end t=w d=7 goto2*:align
-:DD=n+":Align button"+n+"Missing" goto13
+:DD=n+":Align button"+n+"Missing" goto9
 //^:Align button missing loop
 
 
