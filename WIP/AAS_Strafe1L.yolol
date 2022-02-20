@@ -1,0 +1,4 @@
+r=1000 q=r*2 p=100 n=-p
+a=:AL<r b=:AD<r :SLR=p*a+n*((:AR<r)-a) :SUD=p*b+n*((:AU<r)-b) goto2
+
+//Designed to be used with AAS_Stop1LCompanion
