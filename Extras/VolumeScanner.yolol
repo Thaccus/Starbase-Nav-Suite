@@ -7,14 +7,14 @@ V1=:VOL V=(V1+0.05)/k*k L1=:Mat-o-c+b+V+s
 :IDX=1 V2=:VOL V=(V2+0.05)/k*k L2=b+:Mat-o-c+b+V+s
 t=V1+V2 scn=L1+L2+b+b+t+s  :Scanner=0 goto1
 
-Material Point Scanner Fields
-Field 1(andButton): Scanner
-Field 2: Idx
-Field 3: ScanResults
-Field 4: Mat
-Field 5: Vol
-Field 6: Scan
-Field 7: Reset
-
+//TextPanel: SCN
+//Material Point Scanner Fields
+//Field 1(andButton): Scanner
+//Field 2: Idx
+//Field 3: ScanResults
+//Field 4: Mat
+//Field 5: Vol
+//Field 6: Scan
+//Field 7: Reset
 //To change to sacks s=" stks" V1=:Vol/1728 V2=:Vol/1728
 //Who made the original? Please message Thaccus so I can attribute
