@@ -1,5 +1,5 @@
 r=4000 p=100 goto2*:AS
-if:AS*((:AL+:AR+:AU+:AD)<r) then b=:FWD :FWD=0 :c=1 goto3end:c=0 goto2
+if:AS*((:AL+:AR+:AU+:AD)<r) thenb=:FWD :FWD=0 :c=1 goto3end :c=0 goto2
 if:AS*((:AL+:AR+:AU+:AD)<r) then:BWD=p goto3end :BWD=0 :FWD=b goto2
 //sets fwd to 0 and bwd to max if a sector is colliding
 //resets fwd to original value when the obstruction ends.
