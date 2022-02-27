@@ -62,5 +62,9 @@ List of global vars. Grouping is based on function. Ctrl-F good.
 :Wps Waypoint save button
 :Wph Waypoint home button
 :Wpl Waypoint load button
+:WIM Waypoint manual entry field/copyable string import button
+:WEX Waypoint manual entry field/copyable string export button
+:WEC Waypoint copyable string export field
+:WIC Waypoint copyable string import field
 :Dest Destination Display
 :DTW Waypoint Deltas Display
