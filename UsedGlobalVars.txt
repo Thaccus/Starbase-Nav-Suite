@@ -1,12 +1,12 @@
 List of global vars. Grouping is based on function. Ctrl-F good.
 
-:FWD FcuForward Field 3 Letter Standard
-:BWD FcuBackward Field 3 Letter Standard
-:PCH FcuRotationalPitch Field 3 Letter Standard
-:YAW FcuRotationalYaw Field 3 Letter Standard
-:ROL FcuRotationalRoll Field 3 Letter Standard
-:SUD FcuUpDown Field 3 Letter Standard
-:SLR FcuRightLeft Field 3 Letter Standard
+:FF FcuForward Field 3 Letter Standard
+:FB FcuBackward Field 3 Letter Standard
+:FP FcuRotationalPitch Field 3 Letter Standard
+:FY FcuRotationalYaw Field 3 Letter Standard
+:FR FcuRotationalRoll Field 3 Letter Standard
+:FV FcuUpDown Field 3 Letter Standard
+:FH FcuRightLeft Field 3 Letter Standard
 :Aprch Approach button
 :Crus Cruise button should also be the field name for the recenter on the FWD lever
 :B Back Reciever Signal Strength Field
