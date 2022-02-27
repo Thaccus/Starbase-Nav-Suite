@@ -17,7 +17,7 @@ How to install: Download the .fbe and turn it into a module. Paste the module in
 
 How to use: Stop the ship. Enter a waypoint either by saving and/or selecting it then Loading it via Archageos Waypointing system. Press nav to go there or point at it manually with compass and go yourself.
 
-FAQ: https://github.com/Thaccus/Starbase-Nav-Suite/wiki
+FAQ: https://github.com/Thaccus/Starbase-Nav-Suite/wiki/FAQ
 
 My question isn't in the faq. What do?
 
