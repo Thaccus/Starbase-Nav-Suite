@@ -1,14 +1,13 @@
-l=.03 pt=25 yt=25 rt=30 wait=35 d=5 n="\n" s=" " goto1+:align
-ift<wait thent++ goto2end t=0 j=:jz<0 i=:iy<0 x=:jx y=:jy z=:hy
-a=(y>-l)*(y<l) b=(x>-l)*(x<l) c=(z>-l)*(z<l)
-:DD=l+s+j+i+n+a+b+c+n+y+n+x+n+z+n gotod*:align
-if z<-l or z>l or i then :ROL=:hy*rt+rt*i*(i-z/z*z) end d=5+c goto2
-if y<-l or y>l or j then :PCH=-:jy*pt-pt*j*(j-y/y*y) end
-if x<-l or x>l then :YAW=:jx*yt+yt*j*(j-x/x*x) goto2end
-if a*b*c>0 then:align=0 end t=w d=5 goto2*:align
-:DD=n+":Align button"+n+"Missing" goto8
+l=.04 pt=25 yt=25 rt=30 w=34 d=5 n="\n" s=" " goto1+:align
+ift<w thent++ goto2end t=0 j=:jz<0 i=:iy<0 x=:jx y=:jy z=:hy 
+a=y<-l or y>l b=x<-l or x>l c=z<-l or z>l 
+:DD=l+s+j+i+n+a+b+c+n+y+n+x+n+z+n gotod
+if y<-l or y>l or j then :FP=-:jy*pt-pt*j*(j-y) end
+if x<-l or x>l then :FY=:jx*yt+yt*j*(j-x) d=7 goto2end
+if z<-l or z>l or i then :FR=:hy*rt+rt*i*(i-z) d=5 goto2end
+if a+b+c<1 then:align=0 end t=w d=7 goto2*:align
+:DD=n+":Align button"+n+"Missing" goto13
 //^:Align button missing loop
-
 
 
 
@@ -18,3 +17,4 @@ if a*b*c>0 then:align=0 end t=w d=5 goto2*:align
 
 //Reorients ship to align with IPS/ISAN grid pointing Z+
 //:Align :DD :jx :jy :hy :jz :iy :PCH :ROL :YAW
+//Original by Thaccus
