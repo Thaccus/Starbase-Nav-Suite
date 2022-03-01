@@ -1,7 +1,7 @@
-s=15 Kp=0.3 Ki=0.01 Kd=4 t=8 m=1000 g=1/m p=0 goto1+:APRCH>0
+s=15 Kp=0.3 Ki=0.01 Kd=4 t=4 m=1000 g=1/m p=0 goto1+:APRCH>0
 r=:AU e=r-s d=e-p i+=e/(d-g) i/=2 o=Kp*e+Ki*i+Kd*d p=e r*=r<m
-z/=:APRCH*r*(d*d>g+e*e>1) :FWD=o/t :BWD=-o*t goto2
-if:AU<s then:APRCH=0 :FWD=0 :BWD=0 goto1end goto1
+z/=:APRCH*r*(d*d>g+e*e>1) :FF=o/t :FB=-o*t goto2
+if:AU<(s+1) and:AU>(s-1) then:APRCH=0 :FF=0 :FB=0 goto1end goto1
 
 
 
@@ -17,4 +17,4 @@ if:AU<s then:APRCH=0 :FWD=0 :BWD=0 goto1end goto1
 // Ki (integral)     factor of how long we've been at our distance
 // Kd (derivative)   factor of prediction of where we'll be in future
 // t (thrust diff)   account for disparity in forward/rev thrust power
-// CREDIT TO WHITESTRAKE
+//Original by Whitestrake
