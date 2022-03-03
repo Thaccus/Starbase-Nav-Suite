@@ -1,0 +1,13 @@
+s=15 t=15 m=1000 g=0.800 ib=4 p=0 i=0 x=ib+s u=0
+if :APRCH*(:AU<m) then goto4-:CD end goto1
+Kp=0.038 Ki=0.001 Kd=5.4 f=0.3 n=300 Kd*=1-f l=:AU-s goto5 //NSZ
+Kp=0.038 Ki=0.001 Kd=5.4 f=0.3 n=500 Kd*=1-f l=:AU-s goto5 //SZ
+e=:AU-s p=e p-=(e>n)*(e-n) d=(l-e)*Kd+d*f i+=e*Ki*(:AU<x) r=u/t u+=u<t
+l=e z/=:Aprch*(:AU<m)*(d*d>g+e*e>5) :FF=(Kp*p+i)*r :FB=(d-i)*r goto5
+if (d*d>g+e*e>5)<1 then :Aprch=0 :FF=0 :FB=0 goto1end goto5
+
+//Improved PID - Approximated Profiled Motion PID - VER 2.1
+// by: Darkyshadow
+// github.com/GameName-Darkyshadow/Starbase
+// tips by in game mail are not necessary but appreciated
+// Tuning Parameters explained on Github with Manual
