@@ -1,5 +1,5 @@
 k=1000 e=19 i=:WIM j=:WEX n=:WPN goto1+(i+j)>0
-t=""+m+" \nX:"+x/k*k+" \nY:"+y/k*k+" \nZ:"+z/k*k 
+t=:WNM+" \nX:"+:XXX/k*k+" \nY:"+:YYY/k*k+" \nZ:"+:ZZZ/k*k
 if:WEC!=0 then t=:WEC end o=n/2-(n/2000*k) goto3.5+n/2
 ifo thenifj then:w1=t endelseifj then:w2=t endendgotoe
 ifo thenifj then:w3=t endelseifj then:w4=t endendgotoe
