@@ -1,4 +1,7 @@
 # Ships
+## Example Ship
+Original ship created by Taccus
+
 ## Science Laborer
 Original ship created by Frozenbyte
 Edited by Peacefighter1996
@@ -12,5 +15,5 @@ Open Update:
 - [ ] Check if isan is working ouside design.
 - [ ] Chronometer display in the cockpit.
  
-![Laberor Side](Science_Laborer_Front.jpg)
-![Laberor Side](Science_Laborer_Side.jpg)
+![Laberor Side](../Media/Science_Laborer_Front.jpg)
+![Laberor Side](../Media/Science_Laborer_Side.jpg)
