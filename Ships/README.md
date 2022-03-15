@@ -14,6 +14,6 @@ Open Update:
 - [ ] Set up align rotation values.
 - [ ] Check if isan is working ouside design.
 - [ ] Chronometer display in the cockpit.
- 
-![Laberor Side](../Media/Science_Laborer_Front.jpg)
+
+![Laberor Front](../Media/Science_Laborer_Front.jpg)
 ![Laberor Side](../Media/Science_Laborer_Side.jpg)
