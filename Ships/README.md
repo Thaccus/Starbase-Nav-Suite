@@ -1,4 +1,7 @@
 # Ships
+## Example Ship
+Original ship created by Taccus
+
 ## Science Laborer
 Original ship created by Frozenbyte
 Edited by Peacefighter1996
@@ -11,6 +14,6 @@ Open Update:
 - [ ] Set up align rotation values.
 - [ ] Check if isan is working ouside design.
 - [ ] Chronometer display in the cockpit.
- 
+
 ![Laberor Front](../Media/Science_Laborer_Front.jpg)
 ![Laberor Side](../Media/Science_Laborer_Side.jpg)
