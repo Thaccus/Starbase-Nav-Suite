@@ -1,14 +1,13 @@
 :RESET=1 b="\n" o=" Ore" c=" Crystal" k=100 s=" kV"
-s1="Scan." s2="Scan.." a="Analyzing" r="Result" :SCN=r+b+scn
+s1="Scan." s2="Scan.." a="Analyzing" r="Result"+b :SCN=r+scn
 goto3+:SCANNER
-:SCAN=1 :SCN=s1+b+scn goto5*SCANNER
-if:VOL==0 then:SCN=s2+b+scn goto4end :SCN=a :IDX=0
+:SCAN=1 :SCN=s1+b+scn goto5*:SCANNER
+:IDX=0 if:VOL==0 then:SCN=s2+b+scn goto4end :SCN=a
 v1=:VOL v=(v1+0.05)/k*k l1=:Mat-o-c+b+v+s 
 :IDX=1 goto8-(:VOL==v1)+(3*(:SCANNER<1)) //IndexWait
 v2=:VOL v=(v2+0.05)/k*k l2=b+:Mat-o-c+b+v+s
-t=v1+v2 scn=l1+l2+b+b+t+s :Scanner=0 v1=0 v2=0 goto1
-scn="Cancelled"+b+l1 v1=0 v2=0 goto1
-//TextPanel: SCN
+t=v1+v2 scn=l1+l2+b+b+t+s :Scanner=0 v1=0 v2=0 :IDX=0 goto1
+scn="Cancelled"+b+l1 v1=0 v2=0 :IDX=0 goto1
 //Material Point Scanner Fields
 //Field 1(andButton): Scanner
 //Field 2: Idx
@@ -16,6 +15,6 @@ scn="Cancelled"+b+l1 v1=0 v2=0 goto1
 //Field 4: Mat
 //Field 5: Vol
 //Field 6: Scan
-//Field 7: Reset
+//Field 7: Reset      TextPanel: SCN
 //To change to sacks s=" stks" V1=:Vol/1728 V2=:Vol/1728
 //Who made the original? Please message Thaccus so I can attribute
