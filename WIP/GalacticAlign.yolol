@@ -5,7 +5,7 @@ a=y<-l or y>l b=x<-l or x>l c=z<-l or z>l
 if y<-l or y>l or j then :FP=-:jy*pt-pt*j*(j-y) end
 if x<-l or x>l then :FY=:jx*yt+yt*j*(j-x) d=7 goto2end
 if z<-l or z>l or i then :FR=:hy*rt+rt*i*(i-z) d=5 goto2end
-if a+b+c<1 then:align=0 end t=w d=7 goto2*:align
+if (a+b+c)<1 then:align=0 end t=w d=7 goto2*:align
 :DD=n+":Align button"+n+"Missing" goto8
 //^:Align button missing loop
 
