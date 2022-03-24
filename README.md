@@ -3,7 +3,7 @@ An integration and minor tweaking of Archaegeo's Waypointing, Firestar99's Compa
 
 ![Package Image](Media/Package.jpg)
 
-The majority of this work is originally done by the authors posted above. Here are links to their original projects but do note that they are not obligated to help you figure out how this version works. These are here for reference and comparison.
+The majority of this work is originally done by the authors posted above. I just made them all play nice together and re-did some math so they all used the same recievers. Here are links to their original projects but do note that they are not obligated to help you figure out how this version works. These are here for reference and comparison.
 
 https://gitlab.com/Firestar99/yolol/-/blob/master/src/compass/README.md
 
