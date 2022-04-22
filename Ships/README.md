@@ -1,6 +1,6 @@
 # Ships
 ## Example Ship
-Original ship created by Taccus
+Original testing and integration ship created by Thaccus. Currently running NavSuite_Adv6
 
 ## Science Laborer
 Original ship created by Frozenbyte
