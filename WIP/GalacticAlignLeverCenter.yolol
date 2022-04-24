@@ -13,8 +13,6 @@ if (a+b+c)<1 then:ALIGN=0 end t=0 d=5 goto2*:align
 
 
 
-
-
 //Reorients ship to align with IPS/ISAN grid pointing Z+
 //:Align :DD :jx :jy :hy :jz :iy :PCH :ROL :YAW
 //Original By Thaccus
