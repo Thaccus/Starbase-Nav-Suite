@@ -3,8 +3,8 @@ if :APRCH*(:AU<m) then goto4-:CD end goto1
 Kp=0.078 Ki=0.001 Kd=5.4 f=0.3 n=300 Kd*=1-f l=:AU-s goto5 //NSZ
 Kp=0.078 Ki=0.001 Kd=5.4 f=0.3 n=700 Kd*=1-f l=:AU-s goto5 //SZ
 e=:AU-s p=e p-=(e>n)*(e-n) d=(l-e)*Kd+d*f i+=e*Ki*(:AU<x) r=u/t u+=u<t
-l=e z/=:Aprch*(:AU<m)*(d*d>g+e*e>5) :FF=(Kp*p+i)*r :FB=(d-i)*r goto5
-if (d*d>g+e*e>5)<1 then :Aprch=0 :FF=0 :FB=0 goto1end goto5
+l=e z/=:Aprch*(:AU<m)*(d*d>g+e*e>5) :CF=(Kp*p+i)*r :CB=(d-i)*r goto5
+if (d*d>g+e*e>5)<1 then :Aprch=0 :CF=0 :CB=0 goto1end goto5
 
 //Improved PID - Approximated Profiled Motion PID - VER 2.1
 // by: Darkyshadow
