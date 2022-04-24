@@ -1,0 +1,20 @@
+if :nav<1 then g=0 f=0 goto1 end 
+l=0.03 pt=50 yt=50 rt=2 ep=1.05 ed=3000 et=3000 chill=32
+if g>0 then :AAS=1 else :AAS=0 end 
+xD=:wx-:X yD=:wy-:Y zD=:wz-:Z Dt=sqrt((xD)^2+(yD)^2+(zD)^2)
+if f<1 then x0=:x y0=:y z0=:z Do=Dt f=1 r=0 end
+da=sqrt((:X-x0)^2+(:Y-y0)^2+(:Z-z0)^2) d0=d1 d1=Dt v1=d0-d1
+dx=(Do-da)*ep+ed if Dt>dx then s=1 :c=0 end
+if s>0 then :CF=0 if abs(v1)<15 then f=0 g=0 s=0 goto1 end end
+n="\n" :dd=(Do-da)+n+Dt+"\nly:"+:ly+" lx:"+:lx+" l:"+l+" g:"+g
+if Dt<et then :NAV=0 :CF=0 :FS=0 end if g>0 then goto1 end
+lx=(:lx>-l)*(:lx<l) ly=(:ly>-l)*(:ly<l) lz=:lz>0 a=0
+if lx*ly*lz then g=1 :AAS=1 goto17end
+if :ly<-l or :ly>l or 1-lz then :CP=:ly*pt+pt*(:lz<0) end
+:CP=0 if :lx<-l or :lx>l then :CY=:lx*yt end
+:CY=0 if :lz<-l or :lz>l then :CR=:lz*rt end
+:CR=0 if a<chill then a+=1 goto16end goto1
+:FS=:MaxFF :CF=:MaxFF :Crus=1  goto1
+
+//dx=(Do-da)*ep+ed if Dt>dx or :c>0 then s=1 :c=0 end
+//Original by Fixerid, modified by Thaccus
