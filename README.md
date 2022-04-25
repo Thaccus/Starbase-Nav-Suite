@@ -1,5 +1,5 @@
 # Nav-Suite
-An integration and minor tweaking of Archaegeo's Waypointing, Firestar99's Compass, FixerID's Autopilot, my own asteroid avoidance and a couple utility scrips that I place pretty regularly.
+An integration and minor tweaking of Archaegeo's Waypointing, Firestar99's Compass, FixerID's Autopilot, DarkyShadow's approach, my own asteroid avoidance and a couple utility scrips that I place pretty regularly.
 
 ![Package Image](Media/Package.jpg)
 
@@ -10,6 +10,8 @@ https://gitlab.com/Firestar99/yolol/-/blob/master/src/compass/README.md
 https://github.com/Archaegeo/Starbase/tree/main/ISAN-Waypoint%20System
 
 https://github.com/fixerid/sb-projects/tree/main/NavCas
+
+https://github.com/GameName-Darkyshadow/Starbase
 
 https://gitlab.com/Whitestrake/yolol
 
