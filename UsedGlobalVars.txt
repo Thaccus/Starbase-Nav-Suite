@@ -1,14 +1,15 @@
 List of global vars. Grouping is based on function. Ctrl-F good.
 
-:FF FcuForward Field 2 Letter Standard
-:FB FcuBackward Field 2 Letter Standard
-:FP FcuRotationalPitch Field 2 Letter Standard
-:FY FcuRotationalYaw Field 2 Letter Standard
-:FR FcuRotationalRoll Field 2 Letter Standard
-:FV FcuUpDown Field 2 Letter Standard
-:FH FcuRightLeft Field 2 Letter Standard
+:CF FcuForward lever's LeverCenterOutput field
+:CB FcuBackward Field lever's LeverCenterOutput field
+:CP FcuRotationalPitch lever's LeverCenterOutput field
+:CY FcuRotationalYaw lever's LeverCenterOutput field
+:CR FcuRotationalRoll lever's LeverCenterOutput field
+:CV FcuUpDown lever's LeverCenterOutput field
+:CH FcuRightLeft lever's LeverCenterOutput field
+:FS Storage for computer controlled cruise resuming after automated action
 :Aprch Approach button
-:Crus Cruise button and the field name for the recenter on the FF lever
+:Crus Cruise button and the field name for the recenter on the Forward lever
 :B Back Reciever Signal Strength Field
 :X Back Reciever X
 :Y Back Reciever Y
@@ -66,5 +67,9 @@ List of global vars. Grouping is based on function. Ctrl-F good.
 :WEX Waypoint manual entry field/copyable string export button
 :WEC Waypoint copyable string export field
 :WIC Waypoint copyable string import field
+:Edit Progress bar for manual waypoint edits also name field for said edits
+:XXX Manual edit X coordinate
+:YYY Manual edit Y coordiante
+:ZZZ Manual edit Z coordiante
 :Dest Destination Display
 :DTW Waypoint Deltas Display
