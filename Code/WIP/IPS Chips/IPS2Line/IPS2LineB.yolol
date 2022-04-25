@@ -1,0 +1,19 @@
+om=" IPS  :o\n" mx="\nX: " my="\nY: " mz="\nZ: " // IPS v1.3 by Fryke
+bm=om+"  Booting  " qm=om+" Quad Mode " mm=om+" Mono Mode " :o=bm 
+cl=1000 m=cl*cl ca=91923 cb=74246 cc=4078 cd=95460 ce=65966 l=550023
+p=142220 d=368640 e=888881 f=-652758 j=111030 k=749384 g=5200332997
+n=707044 o=444478 cg=ca*ca ch=2*ca cn=2*(ca-cb) ci=cb*cb-ca*ca+cd*cd 
+q=2*(cb-cc) i=2*(cd-ce) cj=2*cd h=272015
+op="origin_" nt=op+"north" st=op+"south" et=op+"east" wt=op+"west"
+fm=mm+mx :BT=nt
+t=12 gotot*(:B>0) 
+w=(r-s+u*q+v*i-g)/p :H=h*u-d*v+e*w :E=f*u-k*v-j*w :G=n*u-l*v-o*w gotot
+goto1
+a=m-:B u=(a*a-c+cg)/ch v=(c-r+u*cn+ci)/cj :BT=nt t=13 goto10
+c=m-:B c*=c u=(a*a-c+g)/ch v=(c-r+u*cn+ci)/cj :BT=et t=14 goto10
+r=m-:B r*=r v=(c-r+u*cn+ci)/cj :BT=st t=15 goto10
+s=m-:B s*=s :BT=wt t=12 goto10
+
+//offloaded line10 /m-ABC translate to second chip
+//converted all line10 chars to 1char
+//offload :o output to second chip

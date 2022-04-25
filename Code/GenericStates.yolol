@@ -1,0 +1,20 @@
+:Coords=1 b=99 g=100
+:FCURL=g+(:GEN*8)-:BAT/g if:CRUS<1 then:AAS=1 :FS=:FcuForward end
+if :FcuBackward>b then:CRUS=1 :CF=0 :FS=0 end goto2
+:FCURL=115-:BAT/100 goto2 //Fallthrough Case if no :GEN button
+
+
+
+
+
+
+
+
+
+
+//Standard battery manager with cruise cancel and Arpch button color
+//Name 1 :StoredBatteryPower->:Bat and set its priority above others
+//Name Other :StoredBatteryPower->:Battery
+//Name :FuelChamberUnitRateLimit->:GenTgt
+
+//No credit. This has been around since the beginning of time AFAIK

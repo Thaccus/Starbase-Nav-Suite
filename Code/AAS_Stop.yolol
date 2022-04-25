@@ -1,0 +1,20 @@
+r=4000 p=99 a=1 goto2*:AAS //Reset hold for value tweaks
+:C=:AAS*((:AL+:AR+:AU+:AD)<r) if:Cthen:Crus=a :CF=0 goto3endgoto2*:AAS
+if:AAS*((:AL+:AR+:AU+:AD)<r) then:CB=p goto3end :CB=0 :CF=:FS goto2
+//Sets fwd to 0 and bwd to max if a sector is colliding
+//Resets fwd to original value when the obstruction ends.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Original by Thaccus

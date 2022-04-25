@@ -1,0 +1,14 @@
+om=" IPS  ::\n" mx="\nX: " my="\nY: " mz="\nZ: " // IPS v1.3 by Fryke
+bm=om+"  Booting  " mm=om ::=bm fm=mm+mx 
+a=5000 b=-60000 c=0 t=1000 m=t*t
+
+
+
+
+
+
+
+
+:X=:E/m-a :Y=:G/m-b :Z=:H/m-c :T=:I/m-a :U=:J/m-b :V=:L/m-c 
+:Q=:M/m-a :R=:N/m-b :S=:O/m-c ::=fm+:X/t*t+my+:Y/t*t+mz+:Z/t*t goto12
+//eghijlmno

@@ -1,0 +1,20 @@
+a=598.98 b=89.224 c=10 d=100 :Speed=1
+:Spd=(a*:AFW-b)/c if:AFW>3 then:SPD=0 end :LC+=:FIRE*(:FIRE>0)
+:Chrg=(:LC>0)*d :LC+=:FIRE*(:FIRE>0) goto2//*(:fire>0) for lever fire
+:Chrg=100 goto2 //Fallthrough if errors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Speedometer code by MoriWatari
+LaserPanic by Thaccus
