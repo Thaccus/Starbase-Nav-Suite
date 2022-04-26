@@ -1,7 +1,7 @@
 List of global vars. Grouping is based on function. Ctrl-F good.
 
 :CF FcuForward lever's LeverCenterOutput field
-:CB FcuBackward Field lever's LeverCenterOutput field
+:CB FcuBackward lever's LeverCenterOutput field
 :CP FcuRotationalPitch lever's LeverCenterOutput field
 :CY FcuRotationalYaw lever's LeverCenterOutput field
 :CR FcuRotationalRoll lever's LeverCenterOutput field
