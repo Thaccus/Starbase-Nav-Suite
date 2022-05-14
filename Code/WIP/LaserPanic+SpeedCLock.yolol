@@ -1,0 +1,20 @@
+a=598.98 b=89.224 c=10 d=100
+:Spd=((a*:SR-b)/c)*(1-:SR>3) :LC+=:FIRE*(:FIRE>0) if:SR>3then:SC=0 end
+:Chrg=(:LC>0)*d :LC+=:FIRE*(:FIRE>0) if:SR>3then:SC=1 endgoto2
+:Chrg=100 goto2 //Fallthrough if errors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Speedometer code by MoriWatari
+LaserPanic by Thaccus
