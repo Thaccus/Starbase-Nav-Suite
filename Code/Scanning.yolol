@@ -2,7 +2,7 @@
 s1="Scan." s2="Scan.." a="Analyzing" r="Result"+b :SCN=r+scn
 goto3+:Scanner
 :SCAN=1 
-:SCN=s1+b+scn goto6*:SCANNER
+:SCAN=1 :SCN=s1+b+scn goto6*:SCANNER
 if:RSLT<2 then:SCN=s2+b+scn goto5end :SCN=a :IDX=0 i=0
 i++ goto7+(i>3) //wait loop for full volumes
 v1=:VOL v=(v1+0.05)/k*k m=:Mat l1=m-o-c+b+v+s
