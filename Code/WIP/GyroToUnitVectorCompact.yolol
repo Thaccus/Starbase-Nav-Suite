@@ -1,0 +1,10 @@
+:GC=1 n="\n"
+a=SIN :GP b=COS :GP c=SIN :GY d=COS :GY e=SIN :GR f=COS :GR
+:EX=-c*b :EY=a :EZ=d*b :UX=a*c*f-b*d*e :UY=b*f :UZ=-d*a*f-c*e
+:VX=-c*a*e-d*f :VY=-e :VZ=-d*a*e-c*f goto2
+
+//GC is GyroCalibrate
+//Gpyr are pitch roll yaw
+//Exyz is Jxyz
+//Vxyz is Hxyz
+//Uxyz is Ixyz
