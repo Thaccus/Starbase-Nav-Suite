@@ -1,10 +1,5 @@
-:GC=1 n="\n"
-a=SIN :GP b=COS :GP c=SIN :GY d=COS :GY e=SIN :GR f=COS :GR
-:EX=-c*b :EY=a :EZ=d*b :UX=a*c*f-b*d*e :UY=b*f :UZ=-d*a*f-c*e
-:VX=-c*a*e-d*f :VY=-e :VZ=-d*a*e-c*f goto2
-
-//GC is GyroCalibrate
-//Gpyr are pitch roll yaw
-//Exyz is Jxyz
-//Vxyz is Hxyz
-//Uxyz is Ixyz
+goto1+(:IN!=0)
+::="reset"  if:IN<0 then:GC=1 :x=0 :y=0 :z=0 :IN=1 end
+a=cos :GY b=sin :GY d=cos :GP e=sin :GP f=cos :GR g=sin :GR
+:JZ=a*d-b*g*e :JX=-b*d+a*g*e :JY=f*e :HZ=-b*f :HX=-a*f :HY=-g
+:IZ=-a*e-b*g*d :IX=b*e-a*g*d :IY=f*d goto3*:IN
