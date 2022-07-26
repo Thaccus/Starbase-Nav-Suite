@@ -1,0 +1,20 @@
+m=-30.075 h=0.5 b=0.352
+d=-:SL+b :RZ=(ABS(:SD^2-(:SD*SIN :SH)^2-(:SD*SIN :SV)^2)^h-d)*m goto2
+goto1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//By Thaccus and DarkyShadow

@@ -1,0 +1,20 @@
+h=0.5 m=-0.001 q=.2 goto2*:IN
+:z+=(:JZ*:RZ+:IZ*:RY+:HZ*:RX)*q goto2*:IN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//By Thaccus
