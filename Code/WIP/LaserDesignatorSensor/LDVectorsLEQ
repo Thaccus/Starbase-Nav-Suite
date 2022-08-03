@@ -1,0 +1,4 @@
+z=4+1 m=30.075 n=-m h=.5 a=-832.35 c=0.352 d=.1 :SA=1 e=90 goto++:a%z
+goto++:a%z // DO NOT USE, INCONSISTENT
+:RY=:SD*SIN :SV*n :RX=:SD*SIN :SH*m :SO=:SL-c :SL=:Spd/a-d goto++:a%z
+:RZ=((:SD^2-(:SD*COS(e-:SV))^2-(:SD*COS(e-:SH))^2)^h+:SO)*n goto++:a%z
