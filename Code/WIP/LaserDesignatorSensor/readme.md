@@ -8,4 +8,4 @@ Contact me if you'd like to put in the work.
 
 Also requires calibration every time you move it in the designer. Move it around by 10000ths(you can enter values tha are below the decimal precision of the translation tool readout and have them work, but you still can't read that precision so remember what you entered) until SH and SV are zeroed when the designator is on.
 
-Still very much WIP
+Still very much WIP. There is a 0-1m/s error on the forward speed when travelling laterally that I have yet to pin down. My current assumption is that it is somehow related to the inherent distance between the laser designator and sensor. Despite me placing them so close that they touch and error out movement in many cases, they still sit somewhere around 0.352m apart. I think that this is fairly good evidence that either one or both objects measure from the base of the sensor(the snap point) and not the tip where the art would suggest. If anyone has any isight on the matter, I welcome your input.
