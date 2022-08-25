@@ -1,0 +1,20 @@
+r=4000 p=99 a=1 //turn on+off AAS to update init values
+goto2+:AAS //Non-assigning wait loop
+:C=:AAS*r>(:AL+:AR+:AU+:AD) if:Cthen:Crus=a :CF=0 goto4endgoto3*:AAS
+c=:AAS*r>(:AL+:AR+:AU+:AD) :CB=p*c :CF=:FS*(1-c) :TL=0-c goto3+c
+
+
+
+
+//OLD line4 for comparison
+if:AAS*r>(:AL+:AR+:AU+:AD)then:CB=p goto4end :CB=0 :CF=:FS goto3
+
+
+
+//Sets fwd to 0 and bwd to max if a sector is colliding
+//Resets fwd to original value when the obstruction ends.
+
+
+
+
+//Original by Thaccus
