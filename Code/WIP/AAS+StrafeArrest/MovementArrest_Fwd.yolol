@@ -1,0 +1,19 @@
+y=-5 yd=3 t=0.4 m=0.001 f=.01 b=.5
+goto2+:ESTOP
+:Crus=1 :AAS=0 :NAV=0 :StopLat=1 :MAL=0
+c=y*:RZ+yd*((:RZ-a)/t) a=:RZ :CF=c*f :CB=-c*b goto5-2*:ESTOP
+:CF=0 :CB=0 :StopLat=0 goto1
+
+
+
+
+
+
+
+
+
+//Dependencies
+//LD/CLF Translation Sensor :RZ
+//NavSuite LeverCenterCenterValue computer controls. :CF, :CB
+//MovementArrest_Lat chip with chipwait named :MAL
+//:ESTOP and :StoptLat control buttons

@@ -1,0 +1,19 @@
+y=-2 yd=-.5 x=2 xd=.5 t=0.4
+goto2+:StopLat
+:CV=y*:RY+yd*((:RY-a)/t) :CH=x*:RX+xd*((:RX-b)/t) a=:RY b=:RX
+goto5-2*:StopLat
+:CV=0 :CH=0 goto1
+
+
+
+
+
+
+
+
+
+//Name chipwait field :MAL for ESTOP/AAS integration.
+//Dependencies
+//LD/CLF Translation Sensor :RX :RY
+//NavSuite LeverCenterCenterValue computer controls. :CH, :CV
+//:StoptLat button
