@@ -1,6 +1,6 @@
 # AAS+StrafeArrest+EmergencyStop Package
 
-This set 4 chips uses the LDTS to improve on the longstanding asteroid avoidance regime. It does so by arresting lateral motion after the AAS finishes dodging. As a bonus, the same code can be used to create an emergency stop button that will counter all motion regardless of facing until the ship comes to a full stop. I have included in this upload a small ship that was built using the newest NavSuite release candidate set and includes this new feature set.
+This set 4 chips uses the LDTS to improve on the longstanding asteroid avoidance regime. It does so by arresting lateral motion after the AAS finishes dodging os that you do not drift into new obstructions. As a bonus, the same code can be used to create an emergency stop button that will counter all motion regardless of facing until the ship comes to a full stop. I have included in this upload a small ship that was built using the newest NavSuite release candidate set and includes this new feature set.
 
 I am using PD control and you can tune them to your liking through the x/y and xd/yd variables in either MovementArrest chip.
 
