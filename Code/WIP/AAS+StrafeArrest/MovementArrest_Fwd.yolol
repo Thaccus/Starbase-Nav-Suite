@@ -16,4 +16,4 @@ c=y*:RZ+yd*((:RZ-a)/t) a=:RZ :CF=c*f :CB=-c*b goto5-2*:ESTOP
 //LD/CLF Translation Sensor :RZ
 //NavSuite LeverCenterCenterValue computer controls. :CF, :CB
 //MovementArrest_Lat chip with chipwait named :MAL
-//:ESTOP and :StoptLat control buttons
+//:ESTOP and :StopLat buttons

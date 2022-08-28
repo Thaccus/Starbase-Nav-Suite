@@ -1,8 +1,28 @@
 r=4000 p=99 a=1 //turn on+off AAS to update init values
 goto2+:AAS //Non-assigning wait loop
+:C=:AAS*r>(:AL+:AR+:AU+:AD) if:Cthen:Crus=a :CF=0 goto4endgoto3*:AAS
+c=:AAS*r>(:AL+:AR+:AU+:AD) :CB=p*c :CF=:FS*(1-c) :MAL=0-c goto3+c
+goto3 //Fallthrough case. Maybe CF/B=0 to prevent errors?
+//Sets fwd to 0 and bwd to max if a sector is colliding
+//Resets fwd to original value when the obstruction ends.
+//OLD line 4 for comparison
+if:AAS*r>(:AL+:AR+:AU+:AD)then:CB=p goto4end :CB=0 :CF=:FS goto3
+
+//Dependencies
+//NavSuite LeverCenterCenterValue computer controls. :CF, :CB, :FS
+//LeverCenteringSpeed on forward stick set to Crus
+//MoveArrest_Lat system with :MAL chipwait
+
+
+
+
+
+//Original by Thaccus
+r=4000 p=99 a=1 //turn on+off AAS to update init values
+goto2+:AAS //Non-assigning wait loop
 :C=:AAS*r>(:AL+:AR+:AU+:AD) if:Cthen:Crus=a :CF=0 endgoto(3+:C)*:AAS
 c=:AAS*r>(:AL+:AR+:AU+:AD) :CB=p*c :CF=:FS*(1-c) :MAL=-c goto3+c
-goto3 //Fallthrough case. Maybe CF/B=0 to prevent errors?
+goto1
 //Sets fwd to 0 and bwd to max if a sector is colliding
 //Resets fwd to original value when the obstruction ends.
 //OLD line 4 for comparison
