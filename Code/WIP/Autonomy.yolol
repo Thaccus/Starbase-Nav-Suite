@@ -1,0 +1,20 @@
+k=1000 t=.6 n="\n" d="Km"+n z=10 x=z-1 f=:fuel p=:propellant
+a=n+"Fuel Range:"+n b="Prop Range:"+n c=n+"Not Moving"
+fl=f f=(:fuel+f*x)/z fd=fl-f s=(:SPD+s*x)/z rf=f/fd*s*t/k
+pl=p p=(:propellant+p*x)/z pd=pl-p rp=p/pd*s*t/k
+if:Spdthen:estrange=a+rf/k*k+d+b+rp/k*k+d else:estrange=c endgoto3
+
+
+
+//z is smoothing, higher numbers mean less jumpy ranges but they take
+//longer to stabilize.
+
+//Requires text panel named :Range
+//Requires FuelChamberFuel named :Fuel 
+//requires GasNetworkStoredResource named :Propellant
+
+
+
+
+
+By HappyTrigger and Thaccus
