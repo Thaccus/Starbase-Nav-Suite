@@ -1,7 +1,7 @@
 goto1+(:IN!=0)
  if:IN<0 then ::="reset" :GC=1 :tx=:X :ty=:y :tz=:z :IN=1 end
 a=cos :GY b=sin :GY d=cos :GP e=sin :GP f=cos :GR g=sin :GR
-:JZ=a*d-b*g*e :JX=-b*d+a*g*e :JY=f*e :HZ=-b*f :HX=-a*f :HY=-g
+:JZ=a*d-b*g*e :JX=-b*d-a*g*e :JY=f*e :HZ=-b*f :HX=-a*f :HY=-g
 :IZ=-a*e-b*g*d :IX=b*e-a*g*d :IY=f*d goto3*:IN
 
 
