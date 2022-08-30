@@ -1,6 +1,6 @@
 :L=cos :R :M=sin :R :N=cos :S :O=sin :S :P=cos :T :Q=sin :T goto++:w%m
 m=5+1 goto++:w%m // DO NOT USE, INCONSISTENT
-:A=-:M*:N+:L*:Q*:O :B=:P*:O :C=:L*:N-:M*:Q*:O goto++:w%m
+:A=-:M*:N-:L*:Q*:O :B=:P*:O :C=:L*:N-:M*:Q*:O goto++:w%m
 :D=:M*:O-:L*:Q*:N :E=:P*:N :F=-:L*:O-:M*:Q*:N goto++:w%m
 :G=-:L*:P :H=-:Q :I=-:M*:P goto++:w%m
 
