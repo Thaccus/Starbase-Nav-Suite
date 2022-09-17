@@ -1,0 +1,20 @@
+m=-30.2 h=.5 a=150 b=.353 c=-5.547 d=1-b
+:RZ=(:SD*(COS(:SH)^2-SIN(:SV)^2)^h+:SL-b)*m :SL=:SPD/a*c-d goto2
+goto1 //Error catch
+
+//Alternate form
+:RZ=((:SD^2-(:SD*SIN :SH)^2-(:SD*SIN :SV)^2)^h+:SL-b)*m
+:RZ=(:SD*((COS(2*:SH)+COS(2*:SV))/2)^h+:SL-b)*m
+:RZ=(:SD*(COS(:SH)^2-SIN(:SV)^2)^h+:SL-b)*m
+
+//Assign :SL after :RZ calc
+:SL=:SPD/a*c-d
+
+
+
+
+
+
+
+
+//By Thaccus, DarkyShadow, and Azurethi
