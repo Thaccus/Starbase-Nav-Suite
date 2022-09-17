@@ -1,4 +1,0 @@
-z=4+1 m=-30.075 h=.5 a=150 b=0.352 c=-5.547 d=.1 :SA=1 goto++:a%z
-goto++:a%z // DO NOT USE, INCONSISTENT
-:RZ=((:SD^2-(:SD*SIN :SH)^2-(:SD*SIN :SV)^2)^h+:SL-b)*m goto++:a%z
-:RY=m*:SD*SIN :SV :RX=-m*:SD*SIN :SH :SL=:Spd/a*c-d goto++:a%z
