@@ -1,4 +1,4 @@
-m=-30.2 h=.5 a=150 b=.353 c=-5.547 d=1-b
+m=-30.2 h=.5 a=150 b=.356 c=-5.547 d=1-b
 :RZ=(:SD*(COS(:SH)^2-SIN(:SV)^2)^h+:SL-b)*m :SL=:SPD/a*c-d goto2
 goto1 //Error catch
 
