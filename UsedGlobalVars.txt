@@ -1,4 +1,4 @@
-List of global vars. Grouping is based on function. Ctrl-F good.
+List of global vars used by NavSuite. Grouping is based on function. Ctrl-F good.
 
 :CF FcuForward lever's LeverCenterOutput field
 :CB FcuBackward lever's LeverCenterOutput field
@@ -8,21 +8,31 @@ List of global vars. Grouping is based on function. Ctrl-F good.
 :CV FcuUpDown lever's LeverCenterOutput field
 :CH FcuRightLeft lever's LeverCenterOutput field
 :FS Storage for computer controlled cruise resuming after automated action
-:Aprch Approach button
-:Crus Cruise button and the field name for the recenter on the Forward lever
-:B Back Reciever Signal Strength Field
+:Gen Autogen minimum spool-up state tooggle button
+:APRCH Approach button
+:CRUS Cruise button and the field name for the recenter on the Forward lever
+:NAV Navigation button for enabling autopilot
+:LatArr Lateral strafe arrest activation button
+:ESTOP Full strafe arrest activation button
+:EstRange Range estimation display
+:Bat sentel battery state for autogen
+:Battery bulk battery state for display readout
+:Propellant propellant readout for display
+:Fuel fuel readout for display
+:FCURL Fuel chamber unit rate limit for autogen
+:SRB Back Reciever Signal Strength Field
 :X Back Reciever X
 :Y Back Reciever Y
 :Z Back Reciever Z
-:F Front Reciever Signal Strength Field
+:SRF Front Reciever Signal Strength Field
 :T Front Reciever X
 :U Front Reciever Y
 :V Front Reciever Z
-:D Down Reciever Signal Strength Field
+:SRD Down Reciever Signal Strength Field
 :Q Down Reciever X
 :R Down Reciever Y
 :S Down Reciever Z
-:TM Target message field for FBD receivers
+:TM Target message field for receivers
 :JX FWD Vector X
 :JY FWD Vector Y
 :JZ FWD Vector Z
@@ -40,7 +50,7 @@ List of global vars. Grouping is based on function. Ctrl-F good.
 :KX Compass Panel Translation Vector X
 :KY Compass Panel Translation Vector Y
 :KZ Compass Panel Translation Vector Z
-:KR Compass magic IDFK
+:KR Compass reset
 :KS Compass Speed. Works as a regular speed output.
 :KA Compass magic IDFK
 :AAS Asteroid Avoidance Button and RF state control
@@ -49,7 +59,17 @@ List of global vars. Grouping is based on function. Ctrl-F good.
 :AL Leftward AAS rangefinder group readout
 :AR Rightward AAS rangefinder group readout
 :C Asteroid collission flag.
-:W1-30 Waypoint coords. Technically only use 1-10/20 but you can expand to 30np
+:SPD Speed sensor output
+:SI LDTS Laser and sensor identification string
+:SA LDTS Laser activation
+:SL LDTS Laser length
+:SD LDTS Sensor distance
+:SH LDTS Sensor horizontal deflection
+:SV LDTS Sensor vertical deflection
+:RX LDTS Ship relative horizontal speed(using isan axis inversion)
+:RY LDTS Ship relative vertical speed
+:RZ LDTS Ship relative forward speed
+:W1-30 Waypoint coords. Technically only use 1-10/20 but you can expand to 30 by simply adding the fields to your ship and changing a value. Details in wiki
 :WPN Waypoint number
 :WPU Waypoint Update?
 :WPC Waypoint current
@@ -58,11 +78,11 @@ List of global vars. Grouping is based on function. Ctrl-F good.
 :WY Waypoint Y Coord
 :WZ Waypoint Z Coord
 :WP Waypoint Display
-:Wpi Waypoint increment button
-:Wpd Waypoint decrement button
-:Wps Waypoint save button
-:Wph Waypoint home button
-:Wpl Waypoint load button
+:WPI Waypoint increment button
+:WPD Waypoint decrement button
+:WPS Waypoint save button
+:WPH Waypoint home button
+:WPL Waypoint load button
 :WIM Waypoint manual entry field/copyable string import button
 :WEX Waypoint manual entry field/copyable string export button
 :WEC Waypoint copyable string export field
@@ -71,5 +91,5 @@ List of global vars. Grouping is based on function. Ctrl-F good.
 :XXX Manual edit X coordinate
 :YYY Manual edit Y coordiante
 :ZZZ Manual edit Z coordiante
-:Dest Destination Display
+:DEST Waypoint Destination Display
 :DTW Waypoint Deltas Display
