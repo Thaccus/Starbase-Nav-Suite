@@ -1,7 +1,7 @@
 # Nav-Suite
 An integration and minor tweaking of Archaegeo's Waypointing, Firestar99's Compass(Using Collective's ISAN), FixerID's Autopilot, DarkyShadow's approach, HappyTrigger's autonomy calculator, and my own asteroid avoidance, vectored speedometer, anti-drift system, and inertial navigation framework.
 
-![Package Image](Media/Package.jpg)
+![Package Image](Media/NavSuiteAdvFootprint.png)
 
 The majority of this work is originally done by the authors posted above. I just made them all play nice together and re-did some math so they all used the same receivers. Here are links to their original projects but do note that they are not obligated to help you figure out how this version works. These are here for reference and comparison.
 
@@ -11,7 +11,7 @@ The majority of this work is originally done by the authors posted above. I just
 Download the file (named NavSuite_Bas#.fbe NavSuite_Adv#.fbe depending on which version you want) and copy it into your blueprint. Place the parts on your ship and make sure to read the module descriptions(not just the names). Put chips in slots, attach buttons, place receivers in downward L pattern as referenced in FixerID's wiki and as they are oriented in the suite. Ensure your FCU, binds, and levers use the same values(they now default to basic, but changing them isn't hard). Make sure things are named appropriately as per the .fbe and do not collide with whatever else  you have on your ship. A list of all global variables used is available[ here,](https://github.com/Thaccus/Starbase-Nav-Suite/blob/main/UsedGlobalVars.txt) but may not be complete. Tune the autopilot as per the [FAQ/Wiki.](https://github.com/Thaccus/Starbase-Nav-Suite/wiki/F.A.Q.) Copy the rangefinders as many times as you need to cover your ship (Use the top one for the top parts etc) and be sure to include at least the top "pointing" lasers as they are used for approach. The ships folder above has some examples of ships using the suite to download if anything is unclear.
 
 ### How to use:
-Stop the ship. Enter a waypoint either by saving and/or selecting it then Loading it via Archageo’s Waypointing system. Press nav to go there or point at it manually with compass and go yourself.
+Stop the ship. Enter a waypoint either by saving and/or selecting it then Loading it via Archageo’s Waypointing system. Press nav to go there or point at it manually with compass and go yourself. Asteroid avoidance will turn on, but you can turn it on yourself if you just want to cruise somewhere without waypoints.
 
 ### [FAQ/Wiki is located here](https://github.com/Thaccus/Starbase-Nav-Suite/wiki/F.A.Q.)
 I can't know what people struggle with unless they tell me. Feel free to suggest topics or contribute them directly to the wiki.
