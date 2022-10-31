@@ -1,0 +1,20 @@
+:a=cos :H :b=cos :V :c=sin :H :d=sin :V :s=:P :f=:R :g=:L goto++:w%m
+m=5 h=-.5 l=.356 s=100 c=105 z=.001 t=6 d=16.67 e=-1 goto++:w%m
+:x=:b*:f*s*:c :y=:f*:a*s*:d :z=c*(l-:g-:f*:a*:b) goto++:w%m
+n=:s*(:x^2+:y^2+:z^2)^h :x*=-n :y*=n :z*=n :L=s/(:S+d)-t goto++:w%m
+// LEQ Directional-Speedo by NTPS + Thaccus
+// Inputs:
+// :P - Speedometer output
+// :R - Sensor Distance
+// :V - Sensor Vertical
+// :H - Sensor Horizontal
+// :L - Length of Beam
+
+// Outputs:
+// :x - Velocity in x direction.
+// :y - Velocity in y direction.
+// :z - Velocity in z direction.
+// :L - Length of Beam
+
+// Internal Memory:
+// :a :b :c :d :s :f :g :w
