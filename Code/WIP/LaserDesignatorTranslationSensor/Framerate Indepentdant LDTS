@@ -1,7 +1,7 @@
-:a=cos :H :b=cos :V :c=sin :H :d=sin :V :s=:P :f=:R :g=:L goto++:w%m
-m=5 h=-.5 l=.356 s=100 c=105 z=.001 t=6 d=16.67 e=-1 goto++:w%m
-:x=:b*:f*s*:c :y=:f*:a*s*:d :z=c*(l-:g-:f*:a*:b) goto++:w%m
-n=:s*(:x^2+:y^2+:z^2)^h :x*=-n :y*=n :z*=n :L=s/(:S+d)-t goto++:w%m
+:a=cos :H :b=cos :V :c=sin :H :d=sin :V :s=:P :f=h*:R :g=:L goto++:w%m
+m=5 h=100 f=.5 l=35.6 t=6 z=.001 d=16.68 goto++:w%m
+:i=:f*:b*:c :j=:f*:a*:d :k=l-h*:g-:f*:a*:b :L=h/(:S+d)-t goto++:w%m
+n=:s/((:i^2+:j^2+:k^2)^f+z) :x=-:i*n :y=:j*n :z=:k*n goto++:w%m
 // LEQ Directional-Speedo by NTPS + Thaccus
 // Inputs:
 // :P - Speedometer output
@@ -17,4 +17,4 @@ n=:s*(:x^2+:y^2+:z^2)^h :x*=-n :y*=n :z*=n :L=s/(:S+d)-t goto++:w%m
 // :L - Length of Beam
 
 // Internal Memory:
-// :a :b :c :d :s :f :g :w
+// :a :b :c :d :s :f :g :w :i :j :K
