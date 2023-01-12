@@ -16,5 +16,5 @@ goto5 //error catch if no button. Set goto1 to reset.
 //Dependencies
 //LD/CLF Translation Sensor :RX :RY
 //NavSuite LeverCenterCenterValue computer controls. :CH, :CV
-//:StopLat button
+//:LatArr button
 //Credit to Firestar99
