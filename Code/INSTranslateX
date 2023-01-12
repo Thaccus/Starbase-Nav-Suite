@@ -1,0 +1,19 @@
+q=0.2
+goto3*:IN
+:x+=(:JX*:RZ+:IX*:RY-:HX*:RX)*q goto3*:IN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
