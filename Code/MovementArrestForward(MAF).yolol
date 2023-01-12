@@ -1,6 +1,6 @@
 y=-8 yd=-3 t=0.4 m=0.001 f=.01 b=.5
 goto2+:ESTOP
-:Crus=1 :AAS=0 :NAV=0 :StopLat=1 :MAL=0
+:Crus=1 :AAS=0 :NAV=0 :LatArr=1 :MAL=0
 c=y*:RZ+yd*((:RZ-a)/t) a=:RZ :CF=c*f :CB=-c*b goto5-2*:ESTOP
 :CF=0 :CB=0 :LatArr=0 goto1
 
