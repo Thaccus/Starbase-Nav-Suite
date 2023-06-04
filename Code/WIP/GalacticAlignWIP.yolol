@@ -1,0 +1,20 @@
+l=.02 pt=100 yt=100 rt=100 w=36 d=6 n="\n" s=" " 
+goto2+:ALIGN
+if t>8 then :CP=0 :CY=0 :CR=0 end ift<wthen t++ goto3end
+j=:jz<0 i=:iy<0 x=:jx y=:jy z=:hy a=y<-l+y>l b=x<-l+x>l c=z<-l+z>l
+:DD=l+s+j+i+n+a+b+c+n+y+n+x+n+z+n gotod*:ALIGN
+d=7 ifa+b+jthen:CP=-:jy*pt-pt*j :CY=:jx*yt+yt*j t=7 goto3end
+d=6 ifc+ithen:CR=:hy*rt+rt*i t=0 goto3end
+if (a+b+c)<1 then:ALIGN=0 end t=w goto3*:align
+:DD=n+":Align button"+n+"Missing" goto9
+//^:Align button missing loop
+
+
+
+
+
+
+
+//Reorients ship to align with IPS/ISAN grid pointing Z+
+//:Align :DD :jx :jy :hy :jz :iy :PCH :ROL :YAW
+//Original By Thaccus
