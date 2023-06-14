@@ -1,4 +1,4 @@
-h=.5 goto2*:IN+:KR
+h=.5 goto2*(1-:IN)+:KR
 p=:T-:X q=:U-:Y r=:V-:Z m=:Q-:X n=:R-:Y o=:S-:Z s=(m*m+n*n+o*o)^h
 m/=s n/=s o/=s t=(p*p+q*q+r*r)^h p/=t q/=t r/=t y=q*o-r*n z=r*m-p*o
 :JX=p :JY=q :JZ=r :IX=m :IY=n :IZ=o :HX=y :HY=z :HZ=p*n-q*m goto2+:KR
