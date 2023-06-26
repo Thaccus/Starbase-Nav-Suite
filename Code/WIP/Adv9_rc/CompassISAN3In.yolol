@@ -1,0 +1,20 @@
+a="origin_" b=a+"north" c=a+"south" d=a+"east" :tm=b goto2*(1-:IN)+:KR
+a+="west" e=160000 f=8*e g=f*3/13 h=2*e i=h*13/19 j=f*3/19 k=h*13/3
+l=1000000 m=l-:SRB m*=m n=l-:SRF n*=n o=l-:SRD o*=o :tm=c
+p=q r=s t=u
+v=l-:SRB v*=v w=l-:SRF w*=w x=l-:SRD x*=x :tm=d
+:X=(m+v)/f+y/g-z/j :Y=v/h-m/i+(y+z)/k :Z=(y+z-m-v)/e
+y=l-:SRB y*=y q=l-:SRF q*=q s=l-:SRD s*=s :tm=a
+:T=(n+w)/f+p/g-aa/j :U=w/h-n/i+(p+aa)/k :V=(p+aa-n-w)/e
+z=l-:SRB z*=z aa=l-:SRF aa*=aa u=l-:SRD u*=u :tm=b
+:Q=(o+x)/f+r/g-t/j :R=x/h-o/i+(r+t)/k :S=(r+t-o-x)/e goto3*(1-:IN)-:kr
+
+
+
+
+//:ke,:kf,:kg->:SRB, :SRF, :SRD Rear Front down receivers
+//:fx,:fy,:fz->:T,:U,:V Front XYZ
+//:ex,:ey,:ez->:X,:Y,:Z Rear XYZ
+//:gx,:gy,:gz->:Q,:R,:S Down XYZ
+
+//Credit to Firestar99

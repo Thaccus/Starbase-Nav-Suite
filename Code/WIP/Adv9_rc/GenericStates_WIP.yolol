@@ -1,0 +1,20 @@
+:Coords=1 b=99 c=10 g=100 m=0.001 :SA=1
+if:HIthen:CRUS=1 :CF=0 :CB=0 :CV=0 :CH=0 :FS=0 end
+if:CRUS<mthen:AAS=1 :FS=:FcuForward end :FCURL=g+(:GEN*c)-:BAT/g goto2
+:FCURL=120-:BAT/g goto2 //Fallthrough Case if fields missing
+
+
+//If you bound :HI and/or include the HID device replce line 2 with:
+if:HI*(:FcuBackward>b)then:CRUS=1 :CF=0 :CB=0 :CV=0 :CH=0 :FS=0 end
+//and set b to whatever value you like
+
+
+
+
+
+//Standard battery manager with cruise control
+//Name at least 1 :StoredBatteryPower->:Bat Set it highest priority
+//Name Other :StoredBatteryPower->:Battery
+//Name :FuelChamberUnitRateLimit->:FCURL
+
+//No credit. Autogen has been around since the beginning of time AFAIK

@@ -1,0 +1,20 @@
+h=.5 goto2-:IN+:KR
+p=:T-:X q=:U-:Y r=:V-:Z m=:Q-:X n=:R-:Y o=:S-:Z s=(m*m+n*n+o*o)^h
+m/=-s n/=-s o/=-s t=(p*p+q*q+r*r)^h p/=t q/=t r/=t y=q*o-r*n z=r*m-p*o
+:JX=p :JY=q :JZ=r :IX=m :IY=n :IZ=o :HX=y :HY=z :HZ=p*n-q*m goto2+:KR
+
+
+//below code moved to CompassDisplayPrep chip
+//:LX=:HX*u+:HY*v+:HZ*w :LY=:IX*u+:IY*v+:IZ*w :LZ=:JX*u+:JY*v+:JZ*w 
+//u=:wx-:X v=:wy-:K w=:wz-:Z x=(u*u+v*v+w*w)^h u/=x v/=x w/=x
+
+
+//For Downward L receiver pattern replace line3 with:
+m/=-s n/=-s o/=-s t=(p*p+q*q+r*r)^h p/=t q/=t r/=t y=q*o-r*n z=r*m-p*o
+//For Upward L receiver pattern replace line3 with:
+m/=s n/=s o/=s t=(p*p+q*q+r*r)^h p/=t q/=t r/=t y=q*o-r*n z=r*m-p*o
+
+
+
+//Globals for Receivers and their coords: SRB(XYZ) SRF(TUV) SRD(QRS)
+//:jx=p :jy=q :jz=r :hx=y :hy=z :hz=a :ix=m :iy=n :iz=o
