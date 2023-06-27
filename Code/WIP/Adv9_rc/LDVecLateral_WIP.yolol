@@ -1,9 +1,9 @@
-:SA=1 m=-30.2 h=.5 b=.353 :SI="PotatoSensor"
+:SA=1 m=-30.2 :SI=:troansponderOwner
 :RX=-m*:SD*SIN :SH :RY=m*:SD*SIN :SV goto2*:SA
 goto1
 
  
-:RX=-:SpD*SIN :SH 
+
 
 :RX=-m*:SD*SIN :SH :RY=m*:SD*SIN :SV :SL=:Spd/a*c-d goto2*:SA
 
