@@ -1,11 +1,11 @@
-:SA=1 m=-30.2 :SI=:transponderOwner
-:RX=-m*:SD*SIN :SH :RY=m*:SD*SIN :SV goto2*:SA
-goto1
+:SA=1 m=-30.2 :TSPDR=1 goto1+(:TransponderOwner!=0)
+:SI=:TransponderOwner :TSPDR=0
+:RX=-m*:SD*SIN :SH :RY=m*:SD*SIN :SV goto3*:SA
+ goto4 //Error catch
 
- 
 
 
-:RX=-m*:SD*SIN :SH :RY=m*:SD*SIN :SV :SL=:Spd/a*c-d goto2*:SA
+
 
 
 
