@@ -1,4 +1,4 @@
-:SA=1 m=-30.2 :SI=:troansponderOwner
+:SA=1 m=-30.2 :SI=:transponderOwner
 :RX=-m*:SD*SIN :SH :RY=m*:SD*SIN :SV goto2*:SA
 goto1
 
