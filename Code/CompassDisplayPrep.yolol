@@ -1,6 +1,7 @@
 :ka+=.7*(:ka==0) :kz=2-:kr>0 goto2+:kr
 a="+0" b="O1" c=0 d=0 e=0 f=0 g=0 h=0.5 i=1
-j=:X k=:Y l=:Z u=:wx-j v=:wy-k w=:wz-l x=(u*u+v*v+w*w)^h
+j=:X k=:Y l=:Z u=:wx-j v=:wy-k w=:wz-l x=(u*u+v*v+w*w)^h u/=x v/=x
+w/=x :LX=:HX*u+:HY*v+:HZ*w :LY=:IX*u+:IY*v+:IZ*w :LZ=:JX*u+:JY*v+:JZ*w
 f=:ly*3/i+h f=6-f-(3-f)*(f<3)-(-3-f)*(f>-3) g=:lx*5/i+h
 :kx=15-g-(5-g)*(g<5)-(-5-g)*(g>-5) :kz=a+b-:lz<0-a-b :ky=f :kl=x
 i=:ka :ks=((j-c)^2+(k-d)^2+(l-e)^2)^.5/.8 c=j d=k e=l goto3+:kr
@@ -10,7 +11,6 @@ i=:ka :ks=((j-c)^2+(k-d)^2+(l-e)^2)^.5/.8 c=j d=k e=l goto3+:kr
 
 :kz=1 c="\n    Read\n  upgrade\ninstruction\n    !!!"
 :k=c+"\n\nmissing :ka" goto12-:kr
-
 
 
 
