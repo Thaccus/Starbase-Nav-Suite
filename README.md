@@ -1,7 +1,7 @@
 # Nav-Suite
 An integration and minor tweaking of Archaegeo's Waypointing, Firestar99's Compass(Using Collective's ISAN), FixerID's Autopilot, DarkyShadow's approach, HappyTrigger's autonomy calculator, and my own asteroid avoidance, vectored speedometer, anti-drift system, and inertial navigation framework.
 
-![Package Image](Media/NavSuiteAdvFootprint.png)
+![Package Image](Media/Package.png)
 
 The majority of this work is originally done by the authors posted above. I just made them all play nice together and re-did some math so they all used the same receivers. Here are links to their original projects but do note that they are not obligated to help you figure out how this version works. These are here for reference and comparison.
 
