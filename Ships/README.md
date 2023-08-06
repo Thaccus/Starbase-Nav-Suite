@@ -1,9 +1,6 @@
 # Ships
-##SIL
+## SIL
 System Integration Lab: A small ship I make for each version starting from just the package. These are built to ensure that the package works out of the box and not just because of legacy stuff on my own production ships.
-
-## Example Ship
-Original testing and integration ship created by Thaccus. Currently running NavSuite_Adv6
 
 ## Science Laborer
 Original ship created by Frozenbyte
