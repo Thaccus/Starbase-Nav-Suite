@@ -1,7 +1,7 @@
-r=1000 p=100 n=-p :CV=0 :CH=0//r=AU/AD/AL/AR p=FcuInputRange
+r=1000 p=100 n=-p :CV=0 :CH=0 //r=AU/AD/AL/AR p=FcuInputRange
 goto2+:AAS //Non-assigning wait loop
-z/=:C a=:AL<r b=:AD<r :CH=p*a+n*(:AR<r-a) :CV=p*b+n*(:AU<r-b) goto3
-if(:StopLat+:c)<1then:CV=0 :CH=0 endgoto3*:AAS
+z/=:C a=:AL<r b=:AD<r :CH=p*a+n*(:AR<r-a) :CV=p*b+n*(:AU<r-b) goto4-:c
+if(:AN+:c)<1then:CV=0 :CH=0 endgoto3*:AAS
 goto1
 //Designed to be used with AAS_Stop, MovementArrest, and ESTOP systems
 //Turn the AAS on and then off to re-init line1 values
@@ -9,7 +9,7 @@ goto1
 //Dependencies
 //NavSuite LeverCenterCenterValue computer controls.
 //AAS_Stop chip for :C output
-//StopLat Button from MovementArrest system
+//:AN Button from MovementArrest system
 
 z/=:AAS a=:AL<r b=:AD<r :CH=p*a+n*(:AR<r-a) :CV=p*b+n*(:AU<r-b) goto3
 r>(:AL+:AR+:AU+:AD)
