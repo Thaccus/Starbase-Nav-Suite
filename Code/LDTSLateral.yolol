@@ -1,9 +1,7 @@
-:SA=1 m=-30.2 :SI="SecretCodeHere"
-:RX=-m*:SD*SIN :SH :RY=m*:SD*SIN :SV goto2*:SA
-goto1
-
- 
-
+:SA=1 m=-30.2 :TSPDR=1 goto1+(:TransponderOwner!=0)
+:SI=:TransponderOwner :TSPDR=0
+:RX=-m*:SD*SIN :SH :RY=m*:SD*SIN :SV goto3*:SA
+goto4 //Error catch
 
 
 
@@ -13,8 +11,10 @@ goto1
 
 
 
+//Set SI to a custom secret value on line 2. Then feel free to remove 
+//the :TSPDR and :TransponderOwner related code to prevent
+//transponder flashing first spawn and sensor reset.
 
 
-//Requires 30FPS limit
 
 //By Thaccus and DarkyShadow
