@@ -12,8 +12,6 @@ List of global vars used by NavSuite. Grouping is based on function. Ctrl-F good
 :APRCH Approach button
 :CRUS Cruise button and the field name for the recenter on the Forward lever
 :NAV Navigation button for enabling autopilot
-:LatArr Lateral strafe arrest activation button
-:ESTOP Full strafe arrest activation button
 :EstRange Range estimation display
 :Bat sentel battery state for autogen
 :Battery bulk battery state for display readout
@@ -93,3 +91,7 @@ List of global vars used by NavSuite. Grouping is based on function. Ctrl-F good
 :ZZZ Manual edit Z coordiante
 :DEST Waypoint Destination Display
 :DTW Waypoint Deltas Display
+:ACF Arrest Chip Forward
+:ACN Arrest Chip Normal
+:AN Arrest Normal button
+:ESTOP Omnidirectional stop activation button
