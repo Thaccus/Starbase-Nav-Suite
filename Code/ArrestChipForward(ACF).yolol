@@ -1,6 +1,6 @@
 y=-12 yd=-4 t=0.4 m=0.001 f=.045 b=1
 e=:AN goto2+:ESTOP
-:AN=1 :ACN=0 :Crus=10 :AAS=0 :NAV=0 :APRCH=0
+:AN=1 :ACN=0 :Crus=10 :AAS=0 :NAV=0 :APRCH=0 :FS=0
 c=y*:RZ+yd*((:RZ-a)/t) a=:RZ :CF=c*f :CB=-c*b goto5-2*:ESTOP
 :CF=0 :CB=0 :Crus=1 :AN=e goto1
 
