@@ -4,10 +4,10 @@ if:CRUS<mthen:AAS=1 :FS=:FcuForward end :FCURL=g+(:GEN*c)-:BAT/g goto2
 :FCURL=120-:BAT/g goto2 //Fallthrough Case if fields missing
 
 
-//If you bound :HI and/or include the HID device replce line 2 with:
+//If you wand to be able to press buttons and still have autopilot on:
 if:HI*(:FcuBackward>b)then:CRUS=1 :CF=0 :CB=0 :CV=0 :CH=0 :FS=0 end
-//and set b to whatever value you like
-
+//and set b to whatever value you like. The ship will now only exit 
+//autopilot when you hold back until the lever reaches b
 
 
 
