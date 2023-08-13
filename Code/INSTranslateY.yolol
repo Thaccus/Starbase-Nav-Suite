@@ -1,6 +1,6 @@
-q=.2 
+t=.2 b=0
 goto3*:IN
-:y+=(:JY*:RZ+:IY*:RY-:HY*:RX)*q goto3*:IN
+a=(:JY*:RZ+:IY*:RY-:HY*:RX) :y+=(a+b)/2*t b=a goto2*:IN
 
 
 
